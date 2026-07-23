@@ -20,7 +20,7 @@ chapter argues for:
 
 - **Covers come before assertions.** Two of the three bugs in this design are
   findable without writing a single `assert`.
-- **A green assertion report means nothing on its own.** Level 4 demonstrates
+- **A green assertion report means nothing on its own.** Level 3 demonstrates
   this with a single line of code.
 - **Covers ask "is this reachable", assertions ask "is this correct".** The
   third bug is invisible to covers even though the relevant cover is hit.
@@ -57,22 +57,6 @@ The properties file is pulled into the module with `` `include `` under
 code is kept out of the synthesizable source (the spirit of the book's
 Tip 4.1).
 
-### What's covered in `solved/`
-
-| Level | Topic | In `solved/` |
-|---|---|---|
-| 0 | infrastructure, assumptions | yes |
-| 1 | cover properties | yes |
-| 2 | safety assertions | yes |
-| 3 | data integrity via symbolic tracking | **not attempted** |
-| 4 | over-constraint experiment | yes |
-| 5 | bounded vs. unbounded proof | partly |
-
-Level 3 is a noticeably harder step and I skipped it on this pass. The
-skeleton has the TODOs for it (commented out so the file still compiles) and
-`fifo_props_ANSWERS.svh` has a complete implementation if you want to work
-from a reference. All three bugs are found without it.
-
 ---
 
 ## Setup
@@ -94,7 +78,7 @@ cd not-solved
 
 sby -f fifo.sby cover     # Level 1 — run this first
 sby -f fifo.sby bmc       # Level 2 — bug hunt
-sby -f fifo.sby prove     # Level 5 — unbounded proof
+sby -f fifo.sby prove     # Level 4 — unbounded proof
 ```
 
 Waveforms:
@@ -156,26 +140,7 @@ design's fault or my property's fault?
 
 Re-run `cover` after every fix. A fix can silently kill a cover.
 
-### Level 3 — data integrity (optional, and genuinely harder)
-
-> Not attempted in `solved/`. The skeleton ships this section commented out;
-> a full implementation lives in `fifo_props_ANSWERS.svh`.
-
-The idea: prove that data comes out in order and unmodified, without writing a
-scoreboard. Pick a free but *constant* value with `$anyconst`, catch the
-moment it enters the FIFO, count how many entries sit ahead of it, and assert
-that it is exactly what comes out when its turn arrives. Because the solver
-chooses the value, a proof for that one element is a proof for every element.
-
-Why this is a step up from Levels 1 and 2: there you were checking things the
-RTL already computes. Here you are designing your own auxiliary hardware. Get
-the "entries ahead of us" term wrong and you spend the afternoon debugging
-your own tracker instead of the design.
-
-If you do attempt it, do not skip the vacuity covers. Without them the
-assertion can pass simply because its trigger condition never occurs.
-
-### Level 4 — the over-constraint experiment
+### Level 3 — the over-constraint experiment
 
 Uncomment one line:
 
@@ -198,7 +163,7 @@ innocent-looking constraint someone added to silence an annoying
 counterexample, and then nobody re-runs the covers. This is the chapter's
 central warning, reproduced in about five minutes.
 
-### Level 5 — bounded vs. full proof
+### Level 4 — bounded vs. full proof
 
 `bmc` says "no violation up to depth 30" — a **bounded** proof. `prove`
 attempts an unbounded one via k-induction.
@@ -257,8 +222,8 @@ translated:
 | `disable iff (rst)` | unsupported | `if (!rst) begin ... end` |
 | free constant | — | `wire x = $anyconst;` |
 
-`$past`, `$stable`, `$rose`, `$fell`, `$anyconst` and `$anyseq` all work, and
-every temporal check in this repo is built from them.
+`$past`, `$stable`, `$rose`, `$fell` and `$anyconst` all work, and every
+temporal check in this repo is built from them.
 
 Every block using `$past` is guarded with `f_past_valid && !$past(rst)`.
 Forgetting that guard produces meaningless failures at time 0 and is the most
