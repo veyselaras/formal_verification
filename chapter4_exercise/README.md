@@ -57,6 +57,22 @@ The properties file is pulled into the module with `` `include `` under
 code is kept out of the synthesizable source (the spirit of the book's
 Tip 4.1).
 
+### What's covered in `solved/`
+
+| Level | Topic | In `solved/` |
+|---|---|---|
+| 0 | infrastructure, assumptions | yes |
+| 1 | cover properties | yes |
+| 2 | safety assertions | yes |
+| 3 | data integrity via symbolic tracking | **not attempted** |
+| 4 | over-constraint experiment | yes |
+| 5 | bounded vs. unbounded proof | partly |
+
+Level 3 is a noticeably harder step and I skipped it on this pass. The
+skeleton has the TODOs for it (commented out so the file still compiles) and
+`fifo_props_ANSWERS.svh` has a complete implementation if you want to work
+from a reference. All three bugs are found without it.
+
 ---
 
 ## Setup
@@ -140,17 +156,24 @@ design's fault or my property's fault?
 
 Re-run `cover` after every fix. A fix can silently kill a cover.
 
-### Level 3 — data integrity (optional, harder)
+### Level 3 — data integrity (optional, and genuinely harder)
 
-Prove that data comes out in order and unmodified, without a scoreboard, using
-a free-but-constant value (`$anyconst`) and a small tracking FSM.
+> Not attempted in `solved/`. The skeleton ships this section commented out;
+> a full implementation lives in `fifo_props_ANSWERS.svh`.
 
-This level is a step up: you are designing your own auxiliary hardware rather
-than checking something the RTL already computes. Budget accordingly, and do
-not skip the vacuity covers — without them the assertion can pass while
-proving nothing.
+The idea: prove that data comes out in order and unmodified, without writing a
+scoreboard. Pick a free but *constant* value with `$anyconst`, catch the
+moment it enters the FIFO, count how many entries sit ahead of it, and assert
+that it is exactly what comes out when its turn arrives. Because the solver
+chooses the value, a proof for that one element is a proof for every element.
 
-The section ships commented out so the file compiles as-is.
+Why this is a step up from Levels 1 and 2: there you were checking things the
+RTL already computes. Here you are designing your own auxiliary hardware. Get
+the "entries ahead of us" term wrong and you spend the afternoon debugging
+your own tracker instead of the design.
+
+If you do attempt it, do not skip the vacuity covers. Without them the
+assertion can pass simply because its trigger condition never occurs.
 
 ### Level 4 — the over-constraint experiment
 
