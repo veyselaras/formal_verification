@@ -127,7 +127,7 @@
   end
 
   // =========================================================================
-  // LEVEL 4 - OVER-CONSTRAINT EXPERIMENT
+  // LEVEL 3 - OVER-CONSTRAINT EXPERIMENT
   //
   // Uncomment the line below and run both tasks. Watch bmc come back clean
   // PASS while cover reports five unreachable statements - three quarters of
