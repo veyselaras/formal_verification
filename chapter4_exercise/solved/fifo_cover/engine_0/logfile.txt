@@ -1,0 +1,80 @@
+##   0:00:00  Solver: z3
+##   0:00:00  Checking cover reachability in step 0..
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Checking cover reachability in step 2..
+##   0:00:00  Reached cover statement in step 2 at fifo: fifo_props.svh:54.5-54.17 (_witness_.check_cover_fifo_props_svh_54_73)
+##   0:00:00  Reached cover statement in step 2 at fifo: fifo_props.svh:56.5-56.16 (_witness_.check_cover_fifo_props_svh_56_75)
+##   0:00:00  Reached cover statement in step 2 at fifo: fifo_props.svh:61.5-61.22 (_witness_.check_cover_fifo_props_svh_61_83)
+##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+##   0:00:00  Checking cover reachability in step 2..
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Reached cover statement in step 3 at fifo: fifo_props.svh:57.5-57.15 (_witness_.check_cover_fifo_props_svh_57_76)
+##   0:00:00  Reached cover statement in step 3 at fifo: fifo_props.svh:58.5-58.23 (_witness_.check_cover_fifo_props_svh_58_77)
+##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Checking cover reachability in step 4..
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Checking cover reachability in step 6..
+##   0:00:00  Checking cover reachability in step 7..
+##   0:00:00  Checking cover reachability in step 8..
+##   0:00:00  Checking cover reachability in step 9..
+##   0:00:00  Reached cover statement in step 9 at fifo: fifo_props.svh:60.5-60.28 (_witness_.check_cover_fifo_props_svh_60_81)
+##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+##   0:00:00  Checking cover reachability in step 9..
+##   0:00:00  Checking cover reachability in step 10..
+##   0:00:00  Reached cover statement in step 10 at fifo: fifo_props.svh:68.5-68.47 (_witness_.check_cover_fifo_props_svh_68_101)
+##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+##   0:00:00  Checking cover reachability in step 10..
+##   0:00:00  Reached cover statement in step 10 at fifo: fifo_props.svh:55.5-55.16 (_witness_.check_cover_fifo_props_svh_55_74)
+##   0:00:00  Reached cover statement in step 10 at fifo: fifo_props.svh:59.5-59.26 (_witness_.check_cover_fifo_props_svh_59_79)
+##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+##   0:00:00  Checking cover reachability in step 10..
+##   0:00:00  Checking cover reachability in step 11..
+##   0:00:00  Reached cover statement in step 11 at fifo: fifo_props.svh:67.5-67.47 (_witness_.check_cover_fifo_props_svh_67_97)
+##   0:00:00  Writing trace to VCD file: engine_0/trace5.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace5_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace5.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace5.yw
+##   0:00:00  Checking cover reachability in step 11..
+##   0:00:00  Checking cover reachability in step 12..
+##   0:00:00  Checking cover reachability in step 13..
+##   0:00:00  Checking cover reachability in step 14..
+##   0:00:00  Checking cover reachability in step 15..
+##   0:00:00  Checking cover reachability in step 16..
+##   0:00:00  Checking cover reachability in step 17..
+##   0:00:00  Checking cover reachability in step 18..
+##   0:00:01  Reached cover statement in step 18 at fifo: fifo_props.svh:62.5-62.31 (_witness_.check_cover_fifo_props_svh_62_85)
+##   0:00:01  Writing trace to VCD file: engine_0/trace6.vcd
+##   0:00:01  Writing trace to Verilog testbench: engine_0/trace6_tb.v
+##   0:00:01  Writing trace to constraints file: engine_0/trace6.smtc
+##   0:00:01  Writing trace to Yosys witness file: engine_0/trace6.yw
+##   0:00:01  Checking cover reachability in step 18..
+##   0:00:01  Checking cover reachability in step 19..
+##   0:00:01  Checking cover reachability in step 20..
+##   0:00:01  Checking cover reachability in step 21..
+##   0:00:01  Checking cover reachability in step 22..
+##   0:00:01  Checking cover reachability in step 23..
+##   0:00:02  Checking cover reachability in step 24..
+##   0:00:02  Checking cover reachability in step 25..
+##   0:00:02  Checking cover reachability in step 26..
+##   0:00:03  Reached cover statement in step 26 at fifo: fifo_props.svh:63.5-63.32 (_witness_.check_cover_fifo_props_svh_63_87)
+##   0:00:03  Writing trace to VCD file: engine_0/trace7.vcd
+##   0:00:03  Writing trace to Verilog testbench: engine_0/trace7_tb.v
+##   0:00:03  Writing trace to constraints file: engine_0/trace7.smtc
+##   0:00:03  Writing trace to Yosys witness file: engine_0/trace7.yw
+##   0:00:03  Status: passed

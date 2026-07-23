@@ -1,0 +1,31 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:03 (3)
+Elapsed process time [H:MM:SS (secs)]: 0:00:03 (3)
+engine_0 (smtbmc z3) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_54_73 at fifo_props.svh:54.5-54.17 step 2
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_56_75 at fifo_props.svh:56.5-56.16 step 2
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_61_83 at fifo_props.svh:61.5-61.22 step 2
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_57_76 at fifo_props.svh:57.5-57.15 step 3
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_58_77 at fifo_props.svh:58.5-58.23 step 3
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_60_81 at fifo_props.svh:60.5-60.28 step 9
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_68_101 at fifo_props.svh:68.5-68.47 step 10
+cover trace: engine_0/trace4.vcd
+cover trace: engine_0/trace4.yw
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_55_74 at fifo_props.svh:55.5-55.16 step 10
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_59_79 at fifo_props.svh:59.5-59.26 step 10
+cover trace: engine_0/trace5.vcd
+cover trace: engine_0/trace5.yw
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_67_97 at fifo_props.svh:67.5-67.47 step 11
+cover trace: engine_0/trace6.vcd
+cover trace: engine_0/trace6.yw
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_62_85 at fifo_props.svh:62.5-62.31 step 18
+cover trace: engine_0/trace7.vcd
+cover trace: engine_0/trace7.yw
+  reached cover statement fifo._witness_.check_cover_fifo_props_svh_63_87 at fifo_props.svh:63.5-63.32 step 26

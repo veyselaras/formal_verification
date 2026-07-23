@@ -1,0 +1,67 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.66+91 (git sha1 8869ce61d, Release, Clang /usr/bin/clang++ 18.1.8)
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design_prep.il
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `fifo'. Setting top module to fifo.
+
+2.1. Analyzing design hierarchy..
+Top module:  \fifo
+
+2.2. Analyzing design hierarchy..
+Top module:  \fifo
+Removed 0 unused modules.
+Module fifo directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3. Executing FORMALFF pass.
+
+4. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+5. Printing statistics.
+
+=== fifo ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       83 wires
+      182 wire bits
+       21 public wires
+       64 public wire bits
+        8 ports
+       22 port bits
+       95 cells
+        3   $add
+        6   $anyinit
+        4   $anyseq
+        5   $assume
+       12   $cover
+        6   $eq
+       15   $ff
+        1   $initstate
+       11   $logic_and
+        9   $logic_not
+        1   $mem_v2
+       19   $mux
+        1   $not
+        1   $pmux
+        1   $sub
+
+6. Executing SMT2 backend.
+
+6.1. Executing BMUXMAP pass.
+
+6.2. Executing DEMUXMAP pass.
+Creating SMT-LIBv2 representation of module fifo.
+
+End of script. Logfile hash: 8a2ab99714, time: 0.00s, user: 0.00s, system: 0.01s, MEM: 15.14 MB peak
+Yosys 0.66+91 (git sha1 8869ce61d, Release, Clang /usr/bin/clang++ 18.1.8)
+Time spent: 53% 2x write_smt2 (0 sec), 23% 2x read_rtlil (0 sec), ...

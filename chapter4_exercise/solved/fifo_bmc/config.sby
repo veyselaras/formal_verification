@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------------------
+# fifo.sby - SymbiYosys task file
+#
+# Usage:
+#   sby -f fifo.sby cover     -> Level 1 (run this first!)
+#   sby -f fifo.sby bmc       -> Level 2 (bug hunt)
+#   sby -f fifo.sby prove     -> Level 5 (full proof / k-induction)
+#   sby -f fifo.sby           -> all tasks
+# ---------------------------------------------------------------------------
+
+[options]
+
+mode bmc
+depth 30
+
+
+[engines]
+smtbmc z3
+# Alternatives:
+#   smtbmc yices
+#   smtbmc boolector
+# PDR is usually much faster in prove mode:
+#   prove: abc pdr
+
+[script]
+read -formal -DFORMAL fifo.sv
+# To change the depth (Level 5), insert before prep:
+#   chparam -set DEPTH 16 fifo
+prep -top fifo
+
+[files]
+rtl/fifo.sv
+fv/fifo_props.svh

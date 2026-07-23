@@ -1,0 +1,95 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$457] false)
+assume (= [$auto$async2sync.cc:107:execute$505] false)
+assume (= [$auto$async2sync.cc:116:execute$443] true)
+assume (= [$auto$async2sync.cc:116:execute$449] true)
+assume (= [$auto$async2sync.cc:116:execute$455] true)
+assume (= [$auto$async2sync.cc:116:execute$461] true)
+assume (= [$auto$async2sync.cc:116:execute$467] true)
+assume (= [$auto$async2sync.cc:116:execute$479] true)
+assume (= [$auto$async2sync.cc:116:execute$491] true)
+assume (= [$auto$async2sync.cc:116:execute$497] true)
+assume (= [$auto$async2sync.cc:116:execute$503] true)
+assume (= [$auto$async2sync.cc:116:execute$509] true)
+assume (= [_witness_.anyinit_procdff_337] false)
+assume (= [_witness_.anyinit_procdff_338] #b000)
+assume (= [_witness_.anyinit_procdff_339] #b000)
+assume (= [count] #x1)
+assume (= [f_past_valid] false)
+assume (= [f_round_trip] false)
+assume (= [f_was_full] false)
+assume (= [rptr] #b110)
+assume (= [wptr] #b000)
+assume (= (select [mem] #b110) #x00)
+assume (= (select [mem] #b000) #x01)
+assume (= (select [mem] #b001) #x92)
+
+state 0
+assume (= [clk] false)
+assume (= [pop] false)
+assume (= [push] false)
+assume (= [rst] true)
+assume (= [wdata] #x10)
+
+state 1
+assume (= [clk] false)
+assume (= [pop] false)
+assume (= [push] true)
+assume (= [rst] false)
+assume (= [wdata] #x41)
+
+state 2
+assume (= [clk] false)
+assume (= [pop] false)
+assume (= [push] true)
+assume (= [rst] false)
+assume (= [wdata] #x92)
+
+state 3
+assume (= [clk] false)
+assume (= [pop] false)
+assume (= [push] true)
+assume (= [rst] false)
+assume (= [wdata] #x10)
+
+state 4
+assume (= [clk] false)
+assume (= [pop] false)
+assume (= [push] true)
+assume (= [rst] false)
+assume (= [wdata] #x42)
+
+state 5
+assume (= [clk] false)
+assume (= [pop] false)
+assume (= [push] true)
+assume (= [rst] false)
+assume (= [wdata] #x10)
+
+state 6
+assume (= [clk] false)
+assume (= [pop] false)
+assume (= [push] true)
+assume (= [rst] false)
+assume (= [wdata] #x22)
+
+state 7
+assume (= [clk] false)
+assume (= [pop] false)
+assume (= [push] true)
+assume (= [rst] false)
+assume (= [wdata] #x84)
+
+state 8
+assume (= [clk] false)
+assume (= [pop] true)
+assume (= [push] false)
+assume (= [rst] false)
+assume (= [wdata] #x08)
+
+state 9
+assume (= [clk] false)
+assume (= [pop] false)
+assume (= [push] false)
+assume (= [rst] false)
+assume (= [wdata] #x10)

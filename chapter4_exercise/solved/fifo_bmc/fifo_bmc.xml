@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-07-23T17:17:32" hostname="Askeladd" package="fifo" id="0" name="bmc" tests="23" errors="0" failures="0" time="7" skipped="12">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="bmc" name="build execution" time="0">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:105.7-105.36" time="0" type="ASSERT" location="fifo_props.svh:105.7-105.36" id="_witness_.check_assert_fifo_props_svh_105_155">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:109.7-109.40" time="0" type="ASSERT" location="fifo_props.svh:109.7-109.40" id="_witness_.check_assert_fifo_props_svh_109_161">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:113.7-113.40" time="0" type="ASSERT" location="fifo_props.svh:113.7-113.40" id="_witness_.check_assert_fifo_props_svh_113_168">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:117.7-117.36" time="0" type="ASSERT" location="fifo_props.svh:117.7-117.36" id="_witness_.check_assert_fifo_props_svh_117_176">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:121.7-121.34" time="0" type="ASSERT" location="fifo_props.svh:121.7-121.34" id="_witness_.check_assert_fifo_props_svh_121_181">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:125.7-125.34" time="0" type="ASSERT" location="fifo_props.svh:125.7-125.34" id="_witness_.check_assert_fifo_props_svh_125_186">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:82.5-82.34" time="0" type="ASSERT" location="fifo_props.svh:82.5-82.34" id="_witness_.check_assert_fifo_props_svh_82_108">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:85.5-85.37" time="0" type="ASSERT" location="fifo_props.svh:85.5-85.37" id="_witness_.check_assert_fifo_props_svh_85_111">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:88.5-88.29" time="0" type="ASSERT" location="fifo_props.svh:88.5-88.29" id="_witness_.check_assert_fifo_props_svh_88_114">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:91.5-91.27" time="0" type="ASSERT" location="fifo_props.svh:91.5-91.27" id="_witness_.check_assert_fifo_props_svh_91_117">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in fifo at fifo_props.svh:95.5-95.44" time="0" type="ASSERT" location="fifo_props.svh:95.5-95.44" id="_witness_.check_assert_fifo_props_svh_95_119">
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:54.5-54.17" time="0" type="COVER" location="fifo_props.svh:54.5-54.17" id="_witness_.check_cover_fifo_props_svh_54_73">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:55.5-55.16" time="0" type="COVER" location="fifo_props.svh:55.5-55.16" id="_witness_.check_cover_fifo_props_svh_55_74">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:56.5-56.16" time="0" type="COVER" location="fifo_props.svh:56.5-56.16" id="_witness_.check_cover_fifo_props_svh_56_75">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:57.5-57.15" time="0" type="COVER" location="fifo_props.svh:57.5-57.15" id="_witness_.check_cover_fifo_props_svh_57_76">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:58.5-58.23" time="0" type="COVER" location="fifo_props.svh:58.5-58.23" id="_witness_.check_cover_fifo_props_svh_58_77">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:59.5-59.26" time="0" type="COVER" location="fifo_props.svh:59.5-59.26" id="_witness_.check_cover_fifo_props_svh_59_79">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:60.5-60.28" time="0" type="COVER" location="fifo_props.svh:60.5-60.28" id="_witness_.check_cover_fifo_props_svh_60_81">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:61.5-61.22" time="0" type="COVER" location="fifo_props.svh:61.5-61.22" id="_witness_.check_cover_fifo_props_svh_61_83">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:62.5-62.31" time="0" type="COVER" location="fifo_props.svh:62.5-62.31" id="_witness_.check_cover_fifo_props_svh_62_85">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:63.5-63.32" time="0" type="COVER" location="fifo_props.svh:63.5-63.32" id="_witness_.check_cover_fifo_props_svh_63_87">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:67.5-67.47" time="0" type="COVER" location="fifo_props.svh:67.5-67.47" id="_witness_.check_cover_fifo_props_svh_67_97">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in fifo at fifo_props.svh:68.5-68.47" time="0" type="COVER" location="fifo_props.svh:68.5-68.47" id="_witness_.check_cover_fifo_props_svh_68_101">
+<skipped />
+</testcase>
+<system-out>SBY 17:17:24 [fifo_bmc] Removing directory '/home/veysel/chapter4_exercises/fifo_bmc'.
+SBY 17:17:24 [fifo_bmc] Copy '/home/veysel/chapter4_exercises/rtl/fifo.sv' to '/home/veysel/chapter4_exercises/fifo_bmc/src/fifo.sv'.
+SBY 17:17:24 [fifo_bmc] Copy '/home/veysel/chapter4_exercises/fv/fifo_props.svh' to '/home/veysel/chapter4_exercises/fifo_bmc/src/fifo_props.svh'.
+SBY 17:17:24 [fifo_bmc] engine_0: smtbmc z3
+SBY 17:17:24 [fifo_bmc] base: starting process &quot;cd fifo_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 17:17:24 [fifo_bmc] base: finished (returncode=0)
+SBY 17:17:24 [fifo_bmc] prep: starting process &quot;cd fifo_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 17:17:24 [fifo_bmc] prep: finished (returncode=0)
+SBY 17:17:24 [fifo_bmc] smt2: starting process &quot;cd fifo_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 17:17:24 [fifo_bmc] smt2: finished (returncode=0)
+SBY 17:17:24 [fifo_bmc] engine_0: starting process &quot;cd fifo_bmc; yosys-smtbmc -s z3 --presat --noprogress -t 30  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Solver: z3
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 17:17:24 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 11..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 11..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 12..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 12..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 13..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 13..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 14..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 14..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 15..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 15..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 16..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assertions in step 16..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:00  Checking assumptions in step 17..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:01  Checking assertions in step 17..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:01  Checking assumptions in step 18..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:01  Checking assertions in step 18..
+SBY 17:17:25 [fifo_bmc] engine_0: ##   0:00:01  Checking assumptions in step 19..
+SBY 17:17:26 [fifo_bmc] engine_0: ##   0:00:01  Checking assertions in step 19..
+SBY 17:17:26 [fifo_bmc] engine_0: ##   0:00:01  Checking assumptions in step 20..
+SBY 17:17:26 [fifo_bmc] engine_0: ##   0:00:01  Checking assertions in step 20..
+SBY 17:17:26 [fifo_bmc] engine_0: ##   0:00:01  Checking assumptions in step 21..
+SBY 17:17:26 [fifo_bmc] engine_0: ##   0:00:01  Checking assertions in step 21..
+SBY 17:17:26 [fifo_bmc] engine_0: ##   0:00:01  Checking assumptions in step 22..
+SBY 17:17:27 [fifo_bmc] engine_0: ##   0:00:02  Checking assertions in step 22..
+SBY 17:17:27 [fifo_bmc] engine_0: ##   0:00:02  Checking assumptions in step 23..
+SBY 17:17:27 [fifo_bmc] engine_0: ##   0:00:02  Checking assertions in step 23..
+SBY 17:17:27 [fifo_bmc] engine_0: ##   0:00:02  Checking assumptions in step 24..
+SBY 17:17:27 [fifo_bmc] engine_0: ##   0:00:03  Checking assertions in step 24..
+SBY 17:17:27 [fifo_bmc] engine_0: ##   0:00:03  Checking assumptions in step 25..
+SBY 17:17:28 [fifo_bmc] engine_0: ##   0:00:03  Checking assertions in step 25..
+SBY 17:17:28 [fifo_bmc] engine_0: ##   0:00:03  Checking assumptions in step 26..
+SBY 17:17:28 [fifo_bmc] engine_0: ##   0:00:04  Checking assertions in step 26..
+SBY 17:17:28 [fifo_bmc] engine_0: ##   0:00:04  Checking assumptions in step 27..
+SBY 17:17:30 [fifo_bmc] engine_0: ##   0:00:05  Checking assertions in step 27..
+SBY 17:17:30 [fifo_bmc] engine_0: ##   0:00:05  Checking assumptions in step 28..
+SBY 17:17:31 [fifo_bmc] engine_0: ##   0:00:06  Checking assertions in step 28..
+SBY 17:17:31 [fifo_bmc] engine_0: ##   0:00:06  Checking assumptions in step 29..
+SBY 17:17:32 [fifo_bmc] engine_0: ##   0:00:07  Checking assertions in step 29..
+SBY 17:17:32 [fifo_bmc] engine_0: ##   0:00:07  Status: passed
+SBY 17:17:32 [fifo_bmc] engine_0: finished (returncode=0)
+SBY 17:17:32 [fifo_bmc] engine_0: Status returned by engine: pass
+SBY 17:17:32 [fifo_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:07 (7)
+SBY 17:17:32 [fifo_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:07 (7)
+SBY 17:17:32 [fifo_bmc] summary: engine_0 (smtbmc z3) returned pass
+SBY 17:17:32 [fifo_bmc] summary: engine_0 did not produce any traces
+SBY 17:17:32 [fifo_bmc] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

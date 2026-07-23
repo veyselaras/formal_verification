@@ -1,0 +1,10 @@
+# running in fifo_cover/src/
+read -formal -DFORMAL fifo.sv
+# To change the depth (Level 5), insert before prep:
+#   chparam -set DEPTH 16 fifo
+prep -top fifo
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il
