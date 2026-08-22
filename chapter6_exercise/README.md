@@ -87,6 +87,12 @@ properties are written but cannot be run without a Verific-based frontend. Modul
 expose their state on ports — as the PE does through its debug outputs — remain fully
 verifiable with this toolchain.
 
+## Notes on Tooling
+
+Claude Opus 5 (medium) was used as an assistant throughout this project — for
+scaffolding the wrapper skeletons, reviewing property drafts, and working through
+toolchain issues. All properties were written and debugged by hand.
+
 ## Toolchain Constraint
 
 The open-source Yosys frontend does not support temporal SVA: no `|=>`, `##N`,
