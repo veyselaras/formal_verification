@@ -1,0 +1,25 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc bitwuzla) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement pe_fv.c_load_then_compute at pe_fv.sv:264.9-268.10 step 2
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement pe_fv.c_enable_inactive at pe_fv.sv:290.9-290.70 step 2
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement pe_fv.c_enable_active at pe_fv.sv:288.9-288.69 step 2
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement pe_fv.c_psum_non_zero at pe_fv.sv:270.9-274.10 step 3
+cover trace: engine_0/trace4.vcd
+cover trace: engine_0/trace4.yw
+  reached cover statement pe_fv.c_negative_psum at pe_fv.sv:282.9-286.10 step 3
+cover trace: engine_0/trace5.vcd
+cover trace: engine_0/trace5.yw
+  reached cover statement pe_fv.c_acc_positive at pe_fv.sv:276.9-280.10 step 4
+  reached cover statement pe_fv.c_max_pos_mult at pe_fv.sv:312.13-316.14 step 4
+cover trace: engine_0/trace6.vcd
+cover trace: engine_0/trace6.yw
+  reached cover statement pe_fv.c_max_neg_mult at pe_fv.sv:318.13-322.14 step 4

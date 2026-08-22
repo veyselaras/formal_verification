@@ -1,0 +1,34 @@
+[tasks]
+bmc
+prove
+cvr
+anyconst
+
+[options]
+bmc:      mode bmc
+prove:    mode prove
+cvr:      mode cover
+anyconst: mode prove
+depth 20
+
+[engines]
+smtbmc bitwuzla
+# alternatives: smtbmc boolector | smtbmc yices | smtbmc z3
+# abc pdr  -> try this if k-induction gets stuck
+
+[script]
+read -define FORMAL
+anyconst: read -define FV_ANYCONST
+
+# Paths here are bare filenames: sby copies everything listed under
+# [files] into <task>/src/ and runs the script from inside that
+# directory. Relative paths belong in [files], not here.
+read -sv pe.sv
+read -sv pe_fv.sv
+
+prep -top pe_fv
+
+[files]
+../../src/pe.sv
+pe_fv.sv
+../common/fv_macros.vh

@@ -1,0 +1,702 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.66+91 (git sha1 8869ce61d, Release, Clang /usr/bin/clang++ 18.1.8)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: decoder.sv
+Parsing SystemVerilog input from `decoder.sv' to AST representation.
+Storing AST representation for module `$abstract\decoder'.
+Storing AST representation for module `$abstract\instruction_builder'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: decoder_fv.sv
+Parsing SystemVerilog input from `decoder_fv.sv' to AST representation.
+Storing AST representation for module `$abstract\decoder_fv'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\decoder_fv'.
+Generating RTLIL representation for module `\decoder_fv'.
+
+3.2.1. Analyzing design hierarchy..
+Top module:  \decoder_fv
+
+3.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\decoder'.
+Generating RTLIL representation for module `\decoder'.
+
+3.2.3. Analyzing design hierarchy..
+Top module:  \decoder_fv
+Used module:     \decoder
+
+3.2.4. Analyzing design hierarchy..
+Top module:  \decoder_fv
+Used module:     \decoder
+Removing unused module `$abstract\decoder_fv'.
+Removing unused module `$abstract\instruction_builder'.
+Removing unused module `$abstract\decoder'.
+Removed 3 unused modules.
+Module decoder_fv directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3.3. Executing PROC pass (convert processes to netlists).
+
+3.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$decoder.sv:125$307 in module decoder.
+Removed a total of 0 dead cases.
+
+3.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 52 assignments to connections.
+
+3.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\decoder_fv.$proc$decoder_fv.sv:61$306'.
+  Set init value: \f_past_valid = 1'0
+
+3.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~12 debug messages>
+
+3.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:61$306'.
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:339$298'.
+     1/1: \c_no_decode_EN
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:309$266'.
+     1/19: \c_matmul_noacc_EN
+     2/19: \c_matmul_acc_EN
+     3/19: \c_invalid_EN
+     4/19: \c_halt_EN
+     5/19: \c_loop_EN
+     6/19: \c_sync_EN
+     7/19: \c_scale_EN
+     8/19: \c_transpose_EN
+     9/19: \c_layernorm_EN
+    10/19: \c_add_EN
+    11/19: \c_softmax_EN
+    12/19: \c_act_silu_EN
+    13/19: \c_act_gelu_EN
+    14/19: \c_act_relu_EN
+    15/19: \c_store_EN
+    16/19: \c_matmul_EN
+    17/19: \c_load_a_EN
+    18/19: \c_load_w_EN
+    19/19: \c_nop_EN
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:299$263'.
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:298$260'.
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:297$257'.
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:296$254'.
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:250$225'.
+     1/26: \a_rst_is_ctrl_EN
+     2/26: \a_rst_is_comp_EN
+     3/26: \a_rst_is_mem_EN
+     4/26: \a_rst_halt_EN
+     5/26: \a_rst_loop_end_EN
+     6/26: \a_rst_loop_st_EN
+     7/26: \a_rst_sync_EN
+     8/26: \a_rst_scale_EN
+     9/26: \a_rst_add_EN
+    10/26: \a_rst_transpose_EN
+    11/26: \a_rst_layernorm_EN
+    12/26: \a_rst_softmax_EN
+    13/26: \a_rst_matmul_EN
+    14/26: \a_rst_act_func_EN
+    15/26: \a_rst_act_en_EN
+    16/26: \a_rst_arr_clr_EN
+    17/26: \a_rst_arr_wl_EN
+    18/26: \a_rst_arr_en_EN
+    19/26: \a_rst_mem_tgt_EN
+    20/26: \a_rst_mem_wr_EN
+    21/26: \a_rst_mem_rd_EN
+    22/26: \a_rst_src2_EN
+    23/26: \a_rst_src1_EN
+    24/26: \a_rst_dst_EN
+    25/26: \a_rst_flags_EN
+    26/26: \a_rst_opcode_EN
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+     1/26: \a_hold_is_ctrl_EN
+     2/26: \a_hold_is_comp_EN
+     3/26: \a_hold_is_mem_EN
+     4/26: \a_hold_halt_EN
+     5/26: \a_hold_loop_end_EN
+     6/26: \a_hold_loop_st_EN
+     7/26: \a_hold_sync_EN
+     8/26: \a_hold_scale_EN
+     9/26: \a_hold_add_EN
+    10/26: \a_hold_transpose_EN
+    11/26: \a_hold_layernorm_EN
+    12/26: \a_hold_softmax_EN
+    13/26: \a_hold_matmul_EN
+    14/26: \a_hold_act_func_EN
+    15/26: \a_hold_act_en_EN
+    16/26: \a_hold_arr_clr_EN
+    17/26: \a_hold_arr_wl_EN
+    18/26: \a_hold_arr_en_EN
+    19/26: \a_hold_mem_tgt_EN
+    20/26: \a_hold_mem_wr_EN
+    21/26: \a_hold_mem_rd_EN
+    22/26: \a_hold_src2_EN
+    23/26: \a_hold_src1_EN
+    24/26: \a_hold_dst_EN
+    25/26: \a_hold_flags_EN
+    26/26: \a_hold_opcode_EN
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:122$73'.
+     1/21: \a_clear_acc_EN
+     2/21: \a_act_func_EN
+     3/21: \a_mem_target_EN
+     4/21: \a_loop_end_dead_EN
+     5/21: \a_is_control_EN
+     6/21: \a_is_compute_EN
+     7/21: \a_is_memory_EN
+     8/21: \a_act_enable_EN
+     9/21: \a_mem_read_EN
+    10/21: \a_halt_EN
+    11/21: \a_loop_start_EN
+    12/21: \a_sync_wait_EN
+    13/21: \a_scale_start_EN
+    14/21: \a_transpose_start_EN
+    15/21: \a_layernorm_start_EN
+    16/21: \a_add_start_EN
+    17/21: \a_softmax_start_EN
+    18/21: \a_mem_write_EN
+    19/21: \a_array_weight_load_EN
+    20/21: \a_array_enable_EN
+    21/21: \a_matmul_start_EN
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:119$72'.
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:94$50'.
+     1/5: $assert$decoder_fv.sv:101$68_EN
+     2/5: $assert$decoder_fv.sv:100$66_EN
+     3/5: $assert$decoder_fv.sv:99$64_EN
+     4/5: $assert$decoder_fv.sv:98$62_EN
+     5/5: $assert$decoder_fv.sv:97$60_EN
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:65$47'.
+     1/1: $assume$decoder_fv.sv:67$49_EN
+Creating decoders for process `\decoder_fv.$proc$decoder_fv.sv:62$46'.
+Creating decoders for process `\decoder.$proc$decoder.sv:125$307'.
+     1/26: $0\is_control_op[0:0]
+     2/26: $0\is_compute_op[0:0]
+     3/26: $0\is_memory_op[0:0]
+     4/26: $0\halt[0:0]
+     5/26: $0\loop_end[0:0]
+     6/26: $0\loop_start[0:0]
+     7/26: $0\sync_wait[0:0]
+     8/26: $0\scale_start[0:0]
+     9/26: $0\add_start[0:0]
+    10/26: $0\transpose_start[0:0]
+    11/26: $0\layernorm_start[0:0]
+    12/26: $0\softmax_start[0:0]
+    13/26: $0\matmul_start[0:0]
+    14/26: $0\activation_func[2:0]
+    15/26: $0\activation_enable[0:0]
+    16/26: $0\array_clear_acc[0:0]
+    17/26: $0\array_weight_load[0:0]
+    18/26: $0\array_enable[0:0]
+    19/26: $0\mem_target[1:0]
+    20/26: $0\mem_write_enable[0:0]
+    21/26: $0\mem_read_enable[0:0]
+    22/26: $0\decoded_src2[7:0]
+    23/26: $0\decoded_src1[7:0]
+    24/26: $0\decoded_dst[3:0]
+    25/26: $0\decoded_flags[3:0]
+    26/26: $0\decoded_opcode[7:0]
+
+3.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:340$44$0' using process `\decoder_fv.$proc$decoder_fv.sv:339$298'.
+  created $dff cell `$procdff$933' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:341$45$0' using process `\decoder_fv.$proc$decoder_fv.sv:339$298'.
+  created $dff cell `$procdff$934' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:310$40$0' using process `\decoder_fv.$proc$decoder_fv.sv:309$266'.
+  created $dff cell `$procdff$935' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:311$41$0' using process `\decoder_fv.$proc$decoder_fv.sv:309$266'.
+  created $dff cell `$procdff$936' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:333$42$0' using process `\decoder_fv.$proc$decoder_fv.sv:309$266'.
+  created $dff cell `$procdff$937' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:334$43$0' using process `\decoder_fv.$proc$decoder_fv.sv:309$266'.
+  created $dff cell `$procdff$938' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:251$39$0' using process `\decoder_fv.$proc$decoder_fv.sv:250$225'.
+  created $dff cell `$procdff$939' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:209$11$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$940' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:210$12$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$941' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:211$13$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$942' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:212$14$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$943' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:213$15$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$944' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:214$16$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$945' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:215$17$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$946' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:217$18$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$947' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:218$19$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$948' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:219$20$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$949' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:221$21$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$950' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:222$22$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$951' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:223$23$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$952' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:225$24$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$953' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:226$25$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$954' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:228$26$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$955' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:229$27$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$956' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:230$28$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$957' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:231$29$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$958' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:232$30$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$959' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:233$31$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$960' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:235$32$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$961' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:236$33$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$962' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:237$34$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$963' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:238$35$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$964' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:240$36$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$965' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:241$37$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$966' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:242$38$0' using process `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+  created $dff cell `$procdff$967' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:123$8$0' using process `\decoder_fv.$proc$decoder_fv.sv:122$73'.
+  created $dff cell `$procdff$968' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:124$9$0' using process `\decoder_fv.$proc$decoder_fv.sv:122$73'.
+  created $dff cell `$procdff$969' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:177$10$0' using process `\decoder_fv.$proc$decoder_fv.sv:122$73'.
+  created $dff cell `$procdff$970' with positive edge clock.
+Creating register for signal `\decoder_fv.\f_op' using process `\decoder_fv.$proc$decoder_fv.sv:119$72'.
+  created $dff cell `$procdff$971' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:95$1$0' using process `\decoder_fv.$proc$decoder_fv.sv:94$50'.
+  created $dff cell `$procdff$972' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:96$2$0' using process `\decoder_fv.$proc$decoder_fv.sv:94$50'.
+  created $dff cell `$procdff$973' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:97$3$0' using process `\decoder_fv.$proc$decoder_fv.sv:94$50'.
+  created $dff cell `$procdff$974' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:98$4$0' using process `\decoder_fv.$proc$decoder_fv.sv:94$50'.
+  created $dff cell `$procdff$975' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:99$5$0' using process `\decoder_fv.$proc$decoder_fv.sv:94$50'.
+  created $dff cell `$procdff$976' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:100$6$0' using process `\decoder_fv.$proc$decoder_fv.sv:94$50'.
+  created $dff cell `$procdff$977' with positive edge clock.
+Creating register for signal `\decoder_fv.$past$decoder_fv.sv:101$7$0' using process `\decoder_fv.$proc$decoder_fv.sv:94$50'.
+  created $dff cell `$procdff$978' with positive edge clock.
+Creating register for signal `\decoder_fv.\f_past_valid' using process `\decoder_fv.$proc$decoder_fv.sv:62$46'.
+  created $dff cell `$procdff$979' with positive edge clock.
+Creating register for signal `\decoder.\decoded_opcode' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$980' with positive edge clock.
+Creating register for signal `\decoder.\decoded_flags' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$981' with positive edge clock.
+Creating register for signal `\decoder.\decoded_dst' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$982' with positive edge clock.
+Creating register for signal `\decoder.\decoded_src1' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$983' with positive edge clock.
+Creating register for signal `\decoder.\decoded_src2' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$984' with positive edge clock.
+Creating register for signal `\decoder.\mem_read_enable' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$985' with positive edge clock.
+Creating register for signal `\decoder.\mem_write_enable' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$986' with positive edge clock.
+Creating register for signal `\decoder.\mem_target' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$987' with positive edge clock.
+Creating register for signal `\decoder.\array_enable' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$988' with positive edge clock.
+Creating register for signal `\decoder.\array_weight_load' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$989' with positive edge clock.
+Creating register for signal `\decoder.\array_clear_acc' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$990' with positive edge clock.
+Creating register for signal `\decoder.\activation_enable' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$991' with positive edge clock.
+Creating register for signal `\decoder.\activation_func' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$992' with positive edge clock.
+Creating register for signal `\decoder.\matmul_start' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$993' with positive edge clock.
+Creating register for signal `\decoder.\softmax_start' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$994' with positive edge clock.
+Creating register for signal `\decoder.\layernorm_start' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$995' with positive edge clock.
+Creating register for signal `\decoder.\transpose_start' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$996' with positive edge clock.
+Creating register for signal `\decoder.\add_start' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$997' with positive edge clock.
+Creating register for signal `\decoder.\scale_start' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$998' with positive edge clock.
+Creating register for signal `\decoder.\sync_wait' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$999' with positive edge clock.
+Creating register for signal `\decoder.\loop_start' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$1000' with positive edge clock.
+Creating register for signal `\decoder.\loop_end' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$1001' with positive edge clock.
+Creating register for signal `\decoder.\halt' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$1002' with positive edge clock.
+Creating register for signal `\decoder.\is_memory_op' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$1003' with positive edge clock.
+Creating register for signal `\decoder.\is_compute_op' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$1004' with positive edge clock.
+Creating register for signal `\decoder.\is_control_op' using process `\decoder.$proc$decoder.sv:125$307'.
+  created $dff cell `$procdff$1005' with positive edge clock.
+
+3.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:61$306'.
+Found and cleaned up 1 empty switch in `\decoder_fv.$proc$decoder_fv.sv:339$298'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:339$298'.
+Found and cleaned up 1 empty switch in `\decoder_fv.$proc$decoder_fv.sv:309$266'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:309$266'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:299$263'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:298$260'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:297$257'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:296$254'.
+Found and cleaned up 1 empty switch in `\decoder_fv.$proc$decoder_fv.sv:250$225'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:250$225'.
+Found and cleaned up 2 empty switches in `\decoder_fv.$proc$decoder_fv.sv:208$165'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:208$165'.
+Found and cleaned up 1 empty switch in `\decoder_fv.$proc$decoder_fv.sv:122$73'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:122$73'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:119$72'.
+Found and cleaned up 2 empty switches in `\decoder_fv.$proc$decoder_fv.sv:94$50'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:94$50'.
+Found and cleaned up 1 empty switch in `\decoder_fv.$proc$decoder_fv.sv:65$47'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:65$47'.
+Removing empty process `decoder_fv.$proc$decoder_fv.sv:62$46'.
+Found and cleaned up 3 empty switches in `\decoder.$proc$decoder.sv:125$307'.
+Removing empty process `decoder.$proc$decoder.sv:125$307'.
+Cleaned up 12 empty switches.
+
+3.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decoder_fv.
+<suppressed ~30 debug messages>
+Optimizing module decoder.
+
+3.4. Executing FUTURE pass.
+
+3.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decoder_fv.
+Optimizing module decoder.
+
+3.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decoder_fv..
+Finding unused cells or wires in module \decoder..
+Removed 1 unused cells and 360 unused wires.
+<suppressed ~3 debug messages>
+
+3.7. Executing CHECK pass (checking for obvious problems).
+Checking module decoder_fv...
+Checking module decoder...
+Found and reported 0 problems.
+
+3.8. Executing OPT pass (performing simple optimizations).
+
+3.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decoder_fv.
+Optimizing module decoder.
+
+3.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decoder_fv'.
+Computing hashes of 472 cells of `\decoder_fv'.
+Finding duplicate cells in `\decoder_fv'.
+Computing hashes of 426 cells of `\decoder_fv'.
+Finding duplicate cells in `\decoder_fv'.
+Computing hashes of 422 cells of `\decoder_fv'.
+Finding duplicate cells in `\decoder_fv'.
+<suppressed ~150 debug messages>
+Finding identical cells in module `\decoder'.
+Computing hashes of 147 cells of `\decoder'.
+Finding duplicate cells in `\decoder'.
+Computing hashes of 116 cells of `\decoder'.
+Finding duplicate cells in `\decoder'.
+<suppressed ~93 debug messages>
+Removed a total of 81 cells.
+
+3.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \decoder_fv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \decoder..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~335 debug messages>
+
+3.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \decoder_fv.
+  Optimizing cells in module \decoder.
+    New ctrl vector for $pmux cell $procmux$900: $auto$opt_reduce.cc:135:opt_pmux$1007
+    New ctrl vector for $pmux cell $procmux$776: $auto$opt_reduce.cc:135:opt_pmux$1009
+    New ctrl vector for $pmux cell $procmux$624: $auto$opt_reduce.cc:135:opt_pmux$1011
+    New ctrl vector for $pmux cell $procmux$597: $auto$opt_reduce.cc:135:opt_pmux$1013
+    New ctrl vector for $pmux cell $procmux$575: $auto$opt_reduce.cc:135:opt_pmux$1015
+  Optimizing cells in module \decoder.
+Performed a total of 5 changes.
+
+3.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decoder_fv'.
+Computing hashes of 422 cells of `\decoder_fv'.
+Finding duplicate cells in `\decoder_fv'.
+Computing hashes of 330 cells of `\decoder_fv'.
+Finding duplicate cells in `\decoder_fv'.
+Computing hashes of 301 cells of `\decoder_fv'.
+Finding duplicate cells in `\decoder_fv'.
+<suppressed ~363 debug messages>
+Finding identical cells in module `\decoder'.
+Computing hashes of 121 cells of `\decoder'.
+Finding duplicate cells in `\decoder'.
+Computing hashes of 120 cells of `\decoder'.
+Finding duplicate cells in `\decoder'.
+<suppressed ~3 debug messages>
+Removed a total of 122 cells.
+
+3.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decoder_fv..
+Finding unused cells or wires in module \decoder..
+Removed 0 unused cells and 115 unused wires.
+<suppressed ~2 debug messages>
+
+3.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decoder_fv.
+Optimizing module decoder.
+
+3.8.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.8.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \decoder_fv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \decoder..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~124 debug messages>
+
+3.8.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \decoder_fv.
+  Optimizing cells in module \decoder.
+Performed a total of 0 changes.
+
+3.8.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decoder_fv'.
+Computing hashes of 301 cells of `\decoder_fv'.
+Finding duplicate cells in `\decoder_fv'.
+Finding identical cells in module `\decoder'.
+Computing hashes of 120 cells of `\decoder'.
+Finding duplicate cells in `\decoder'.
+Removed a total of 0 cells.
+
+3.8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decoder_fv..
+Finding unused cells or wires in module \decoder..
+
+3.8.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decoder_fv.
+Optimizing module decoder.
+
+3.8.14. Finished fast OPT passes. (There is nothing left to do.)
+
+3.9. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 3) from mux cell decoder_fv.$ternary$decoder_fv.sv:173$156 ($mux).
+Removed top 1 bits (of 3) from mux cell decoder_fv.$ternary$decoder_fv.sv:172$157 ($mux).
+Removed top 1 bits (of 3) from port B of cell decoder_fv.$eq$decoder_fv.sv:171$158 ($eq).
+Removed top 7 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:314$275 ($eq).
+Removed top 6 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:315$276 ($eq).
+Removed top 5 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:317$278 ($eq).
+Removed top 5 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:318$279 ($eq).
+Removed top 5 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:319$280 ($eq).
+Removed top 5 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:320$281 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:321$282 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:322$283 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:323$284 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:324$285 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:325$286 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:326$287 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:327$288 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:328$289 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder_fv.$gt$decoder_fv.sv:330$290 ($gt).
+Removed top 6 bits (of 8) from port B of cell decoder_fv.$eq$decoder_fv.sv:334$293 ($eq).
+Removed top 1 bits (of 3) from port B of cell decoder_fv.$eq$decoder_fv.sv:311$296 ($eq).
+Removed top 1 bits (of 3) from port B of cell decoder_fv.$ne$decoder_fv.sv:341$304 ($ne).
+Removed top 1 bits (of 3) from wire decoder_fv.$ternary$decoder_fv.sv:172$157_Y.
+Removed top 1 bits (of 3) from wire decoder_fv.$ternary$decoder_fv.sv:173$156_Y.
+Removed top 1 bits (of 3) from port B of cell decoder.$eq$decoder.sv:162$308 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder.$procmux$635_CMP0 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder.$procmux$649_CMP0 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder.$procmux$659_CMP0 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder.$procmux$670_CMP0 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder.$procmux$684_CMP0 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder.$procmux$696_CMP0 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder.$procmux$709_CMP0 ($eq).
+Removed top 4 bits (of 8) from port B of cell decoder.$procmux$724_CMP0 ($eq).
+Removed top 1 bits (of 3) from mux cell decoder.$procmux$759 ($pmux).
+Removed top 5 bits (of 8) from port B of cell decoder.$procmux$777_CMP0 ($eq).
+Removed top 5 bits (of 8) from port B of cell decoder.$procmux$778_CMP0 ($eq).
+Removed top 5 bits (of 8) from port B of cell decoder.$procmux$779_CMP0 ($eq).
+Removed top 6 bits (of 8) from port B of cell decoder.$procmux$841_CMP0 ($eq).
+Removed top 5 bits (of 8) from port B of cell decoder.$procmux$880_CMP0 ($eq).
+Removed top 6 bits (of 8) from port B of cell decoder.$procmux$901_CMP0 ($eq).
+Removed top 7 bits (of 8) from port B of cell decoder.$procmux$902_CMP0 ($eq).
+Removed top 1 bits (of 3) from wire decoder.$procmux$759_Y.
+
+3.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decoder_fv..
+Finding unused cells or wires in module \decoder..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~2 debug messages>
+
+3.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.12. Executing OPT pass (performing simple optimizations).
+
+3.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module decoder_fv.
+Optimizing module decoder.
+
+3.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\decoder_fv'.
+Computing hashes of 301 cells of `\decoder_fv'.
+Finding duplicate cells in `\decoder_fv'.
+Finding identical cells in module `\decoder'.
+Computing hashes of 120 cells of `\decoder'.
+Finding duplicate cells in `\decoder'.
+Removed a total of 0 cells.
+
+3.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \decoder_fv..
+Finding unused cells or wires in module \decoder..
+
+3.12.4. Finished fast OPT passes.
+
+3.13. Executing SORT pass.
+
+3.14. Printing statistics.
+
+=== decoder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      130 wires
+      287 wire bits
+       36 public wires
+      130 public wire bits
+       36 ports
+      130 port bits
+      120 cells
+       26   $dff
+       16   $eq
+        1   $logic_or
+       69   $mux
+        1   $not
+        2   $pmux
+        5   $reduce_or
+
+=== decoder_fv ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      321 wires
+      485 wire bits
+      131 public wires
+      232 public wire bits
+        5 ports
+       38 port bits
+      300 cells
+      103   $check
+       47   $dff
+       71   $eq
+        1   $gt
+       11   $logic_and
+       15   $logic_not
+       17   $logic_or
+       14   $mux
+        1   $ne
+       20   $not
+        1 submodules
+        1   decoder
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      420 decoder_fv
+      120 decoder
+
+        +----------Count including submodules.
+        | 
+      451 wires
+      772 wire bits
+      167 public wires
+      362 public wire bits
+       41 ports
+      168 port bits
+        - memories
+        - memory bits
+        - processes
+      420 cells
+      103   $check
+       73   $dff
+       87   $eq
+        1   $gt
+       11   $logic_and
+       15   $logic_not
+       18   $logic_or
+       83   $mux
+        1   $ne
+       21   $not
+        2   $pmux
+        5   $reduce_or
+        1 submodules
+        1   decoder
+
+3.15. Executing CHECK pass (checking for obvious problems).
+Checking module decoder...
+Checking module decoder_fv...
+Found and reported 0 problems.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `decoder_fv'. Setting top module to decoder_fv.
+
+4.1. Analyzing design hierarchy..
+Top module:  \decoder_fv
+Used module:     \decoder
+
+4.2. Analyzing design hierarchy..
+Top module:  \decoder_fv
+Used module:     \decoder
+Removed 0 unused modules.
+Module decoder_fv directly or indirectly contains formal properties -> setting "keep" attribute.
+
+5. Executing jny backend.
+
+6. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: a57e8068d6, time: 0.04s, user: 0.04s, system: 0.01s, MEM: 18.00 MB peak
+Yosys 0.66+91 (git sha1 8869ce61d, Release, Clang /usr/bin/clang++ 18.1.8)
+Time spent: 18% 2x hierarchy (0 sec), 17% 5x opt_clean (0 sec), ...

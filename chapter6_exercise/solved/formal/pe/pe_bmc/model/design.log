@@ -1,0 +1,494 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.66+91 (git sha1 8869ce61d, Release, Clang /usr/bin/clang++ 18.1.8)
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: pe.sv
+Parsing SystemVerilog input from `pe.sv' to AST representation.
+Storing AST representation for module `$abstract\pe'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: pe_fv.sv
+Parsing SystemVerilog input from `pe_fv.sv' to AST representation.
+Storing AST representation for module `$abstract\pe_fv'.
+Successfully finished Verilog frontend.
+
+3. Executing PREP pass.
+
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+
+3.2. Executing AST frontend in derive mode using pre-parsed AST for module `\pe_fv'.
+Generating RTLIL representation for module `\pe_fv'.
+
+3.2.1. Analyzing design hierarchy..
+Top module:  \pe_fv
+Parameter \DATA_WIDTH = 8
+Parameter \ACC_WIDTH = 32
+
+3.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\pe'.
+Parameter \DATA_WIDTH = 8
+Parameter \ACC_WIDTH = 32
+Generating RTLIL representation for module `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+
+3.2.3. Analyzing design hierarchy..
+Top module:  \pe_fv
+Used module:     $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe
+
+3.2.4. Analyzing design hierarchy..
+Top module:  \pe_fv
+Used module:     $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe
+Removing unused module `$abstract\pe_fv'.
+Removing unused module `$abstract\pe'.
+Removed 2 unused modules.
+Module pe_fv directly or indirectly contains formal properties -> setting "keep" attribute.
+
+3.3. Executing PROC pass (convert processes to netlists).
+
+3.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 4 switch rules as full_case in process $proc$pe.sv:57$170 in module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.
+Marked 2 switch rules as full_case in process $proc$pe_fv.sv:200$85 in module pe_fv.
+Marked 2 switch rules as full_case in process $proc$pe_fv.sv:175$66 in module pe_fv.
+Marked 2 switch rules as full_case in process $proc$pe_fv.sv:144$52 in module pe_fv.
+Marked 1 switch rules as full_case in process $proc$pe_fv.sv:124$42 in module pe_fv.
+Removed a total of 0 dead cases.
+
+3.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 8 redundant assignments.
+Promoted 45 assignments to connections.
+
+3.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\pe_fv.$proc$pe_fv.sv:60$168'.
+  Set init value: \f_past_valid = 1'0
+
+3.3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~19 debug messages>
+
+3.3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.$proc$pe.sv:57$170'.
+     1/4: $0\psum_out_south[31:0]
+     2/4: $0\data_out_east[7:0]
+     3/4: $0\accumulator[31:0]
+     4/4: $0\weight_reg[7:0]
+Creating decoders for process `\pe_fv.$proc$pe_fv.sv:60$168'.
+Creating decoders for process `\pe_fv.$proc$pe_fv.sv:303$138'.
+     1/3: \c_max_neg_mult_EN
+     2/3: \c_max_pos_mult_EN
+     3/3: \a_extreme_neg_mult_EN
+Creating decoders for process `\pe_fv.$proc$pe_fv.sv:263$112'.
+Creating decoders for process `\pe_fv.$proc$pe_fv.sv:241$105'.
+     1/4: \a_reset_south_EN
+     2/4: \a_reset_east_EN
+     3/4: \a_reset_acc_EN
+     4/4: \a_reset_weight_EN
+Creating decoders for process `\pe_fv.$proc$pe_fv.sv:200$85'.
+     1/3: \a_acc_hold_EN
+     2/3: \a_acc_accumulate_EN
+     3/3: \a_acc_clear_load_EN
+Creating decoders for process `\pe_fv.$proc$pe_fv.sv:175$66'.
+     1/3: \a_psum_hold_EN
+     2/3: \a_psum_mac_EN
+     3/3: \a_psum_bypass_EN
+Creating decoders for process `\pe_fv.$proc$pe_fv.sv:144$52'.
+     1/3: \a_east_hold_EN
+     2/3: \a_east_forward_EN
+     3/3: \a_east_zero_on_load_EN
+Creating decoders for process `\pe_fv.$proc$pe_fv.sv:124$42'.
+     1/2: \a_weight_stable_EN
+     2/2: \a_weight_load_EN
+Creating decoders for process `\pe_fv.$proc$pe_fv.sv:65$39'.
+     1/1: $assume$pe_fv.sv:67$41_EN
+Creating decoders for process `\pe_fv.$proc$pe_fv.sv:61$38'.
+
+3.3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.\data_out_east' using process `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.$proc$pe.sv:57$170'.
+  created $dff cell `$procdff$303' with positive edge clock.
+Creating register for signal `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.\psum_out_south' using process `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.$proc$pe.sv:57$170'.
+  created $dff cell `$procdff$304' with positive edge clock.
+Creating register for signal `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.\weight_reg' using process `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.$proc$pe.sv:57$170'.
+  created $dff cell `$procdff$305' with positive edge clock.
+Creating register for signal `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.\accumulator' using process `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.$proc$pe.sv:57$170'.
+  created $dff cell `$procdff$306' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:304$29$0' using process `\pe_fv.$proc$pe_fv.sv:303$138'.
+  created $dff cell `$procdff$307' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:304$30$0' using process `\pe_fv.$proc$pe_fv.sv:303$138'.
+  created $dff cell `$procdff$308' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:306$31$0' using process `\pe_fv.$proc$pe_fv.sv:303$138'.
+  created $dff cell `$procdff$309' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:306$32$0' using process `\pe_fv.$proc$pe_fv.sv:303$138'.
+  created $dff cell `$procdff$310' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:308$33$0' using process `\pe_fv.$proc$pe_fv.sv:303$138'.
+  created $dff cell `$procdff$311' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:314$34$0' using process `\pe_fv.$proc$pe_fv.sv:303$138'.
+  created $dff cell `$procdff$312' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:315$35$0' using process `\pe_fv.$proc$pe_fv.sv:303$138'.
+  created $dff cell `$procdff$313' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:320$36$0' using process `\pe_fv.$proc$pe_fv.sv:303$138'.
+  created $dff cell `$procdff$314' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:321$37$0' using process `\pe_fv.$proc$pe_fv.sv:303$138'.
+  created $dff cell `$procdff$315' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:266$28$0' using process `\pe_fv.$proc$pe_fv.sv:263$112'.
+  created $dff cell `$procdff$316' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:242$27$0' using process `\pe_fv.$proc$pe_fv.sv:241$105'.
+  created $dff cell `$procdff$317' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:201$18$0' using process `\pe_fv.$proc$pe_fv.sv:200$85'.
+  created $dff cell `$procdff$318' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:202$19$0' using process `\pe_fv.$proc$pe_fv.sv:200$85'.
+  created $dff cell `$procdff$319' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:203$20$0' using process `\pe_fv.$proc$pe_fv.sv:200$85'.
+  created $dff cell `$procdff$320' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:205$21$0' using process `\pe_fv.$proc$pe_fv.sv:200$85'.
+  created $dff cell `$procdff$321' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:205$22$0' using process `\pe_fv.$proc$pe_fv.sv:200$85'.
+  created $dff cell `$procdff$322' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:210$23$0' using process `\pe_fv.$proc$pe_fv.sv:200$85'.
+  created $dff cell `$procdff$323' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:211$24$0' using process `\pe_fv.$proc$pe_fv.sv:200$85'.
+  created $dff cell `$procdff$324' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:211$25$0' using process `\pe_fv.$proc$pe_fv.sv:200$85'.
+  created $dff cell `$procdff$325' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:216$26$0' using process `\pe_fv.$proc$pe_fv.sv:200$85'.
+  created $dff cell `$procdff$326' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:176$10$0' using process `\pe_fv.$proc$pe_fv.sv:175$66'.
+  created $dff cell `$procdff$327' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:177$11$0' using process `\pe_fv.$proc$pe_fv.sv:175$66'.
+  created $dff cell `$procdff$328' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:178$12$0' using process `\pe_fv.$proc$pe_fv.sv:175$66'.
+  created $dff cell `$procdff$329' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:180$13$0' using process `\pe_fv.$proc$pe_fv.sv:175$66'.
+  created $dff cell `$procdff$330' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:182$14$0' using process `\pe_fv.$proc$pe_fv.sv:175$66'.
+  created $dff cell `$procdff$331' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:182$15$0' using process `\pe_fv.$proc$pe_fv.sv:175$66'.
+  created $dff cell `$procdff$332' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:182$16$0' using process `\pe_fv.$proc$pe_fv.sv:175$66'.
+  created $dff cell `$procdff$333' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:186$17$0' using process `\pe_fv.$proc$pe_fv.sv:175$66'.
+  created $dff cell `$procdff$334' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:145$5$0' using process `\pe_fv.$proc$pe_fv.sv:144$52'.
+  created $dff cell `$procdff$335' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:146$6$0' using process `\pe_fv.$proc$pe_fv.sv:144$52'.
+  created $dff cell `$procdff$336' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:149$7$0' using process `\pe_fv.$proc$pe_fv.sv:144$52'.
+  created $dff cell `$procdff$337' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:150$8$0' using process `\pe_fv.$proc$pe_fv.sv:144$52'.
+  created $dff cell `$procdff$338' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:153$9$0' using process `\pe_fv.$proc$pe_fv.sv:144$52'.
+  created $dff cell `$procdff$339' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:125$1$0' using process `\pe_fv.$proc$pe_fv.sv:124$42'.
+  created $dff cell `$procdff$340' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:126$2$0' using process `\pe_fv.$proc$pe_fv.sv:124$42'.
+  created $dff cell `$procdff$341' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:127$3$0' using process `\pe_fv.$proc$pe_fv.sv:124$42'.
+  created $dff cell `$procdff$342' with positive edge clock.
+Creating register for signal `\pe_fv.$past$pe_fv.sv:130$4$0' using process `\pe_fv.$proc$pe_fv.sv:124$42'.
+  created $dff cell `$procdff$343' with positive edge clock.
+Creating register for signal `\pe_fv.\f_past_valid' using process `\pe_fv.$proc$pe_fv.sv:61$38'.
+  created $dff cell `$procdff$344' with positive edge clock.
+
+3.3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 4 empty switches in `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.$proc$pe.sv:57$170'.
+Removing empty process `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.$proc$pe.sv:57$170'.
+Removing empty process `pe_fv.$proc$pe_fv.sv:60$168'.
+Found and cleaned up 2 empty switches in `\pe_fv.$proc$pe_fv.sv:303$138'.
+Removing empty process `pe_fv.$proc$pe_fv.sv:303$138'.
+Removing empty process `pe_fv.$proc$pe_fv.sv:263$112'.
+Found and cleaned up 1 empty switch in `\pe_fv.$proc$pe_fv.sv:241$105'.
+Removing empty process `pe_fv.$proc$pe_fv.sv:241$105'.
+Found and cleaned up 3 empty switches in `\pe_fv.$proc$pe_fv.sv:200$85'.
+Removing empty process `pe_fv.$proc$pe_fv.sv:200$85'.
+Found and cleaned up 3 empty switches in `\pe_fv.$proc$pe_fv.sv:175$66'.
+Removing empty process `pe_fv.$proc$pe_fv.sv:175$66'.
+Found and cleaned up 3 empty switches in `\pe_fv.$proc$pe_fv.sv:144$52'.
+Removing empty process `pe_fv.$proc$pe_fv.sv:144$52'.
+Found and cleaned up 2 empty switches in `\pe_fv.$proc$pe_fv.sv:124$42'.
+Removing empty process `pe_fv.$proc$pe_fv.sv:124$42'.
+Found and cleaned up 1 empty switch in `\pe_fv.$proc$pe_fv.sv:65$39'.
+Removing empty process `pe_fv.$proc$pe_fv.sv:65$39'.
+Removing empty process `pe_fv.$proc$pe_fv.sv:61$38'.
+Cleaned up 19 empty switches.
+
+3.3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.
+Optimizing module pe_fv.
+<suppressed ~7 debug messages>
+
+3.4. Executing FUTURE pass.
+
+3.5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.
+Optimizing module pe_fv.
+
+3.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe..
+Finding unused cells or wires in module \pe_fv..
+Removed 1 unused cells and 114 unused wires.
+<suppressed ~3 debug messages>
+
+3.7. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe...
+Checking module pe_fv...
+Found and reported 0 problems.
+
+3.8. Executing OPT pass (performing simple optimizations).
+
+3.8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.
+Optimizing module pe_fv.
+
+3.8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Computing hashes of 20 cells of `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Finding duplicate cells in `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Finding identical cells in module `\pe_fv'.
+Computing hashes of 183 cells of `\pe_fv'.
+Finding duplicate cells in `\pe_fv'.
+Computing hashes of 169 cells of `\pe_fv'.
+Finding duplicate cells in `\pe_fv'.
+Computing hashes of 161 cells of `\pe_fv'.
+Finding duplicate cells in `\pe_fv'.
+<suppressed ~66 debug messages>
+Removed a total of 22 cells.
+
+3.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \pe_fv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~73 debug messages>
+
+3.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.
+  Optimizing cells in module \pe_fv.
+Performed a total of 0 changes.
+
+3.8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Computing hashes of 20 cells of `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Finding duplicate cells in `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Finding identical cells in module `\pe_fv'.
+Computing hashes of 161 cells of `\pe_fv'.
+Finding duplicate cells in `\pe_fv'.
+Computing hashes of 157 cells of `\pe_fv'.
+Finding duplicate cells in `\pe_fv'.
+<suppressed ~12 debug messages>
+Removed a total of 4 cells.
+
+3.8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe..
+Finding unused cells or wires in module \pe_fv..
+Removed 0 unused cells and 22 unused wires.
+<suppressed ~1 debug messages>
+
+3.8.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.
+Optimizing module pe_fv.
+
+3.8.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+3.8.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \pe_fv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~65 debug messages>
+
+3.8.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.
+  Optimizing cells in module \pe_fv.
+Performed a total of 0 changes.
+
+3.8.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Computing hashes of 20 cells of `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Finding duplicate cells in `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Finding identical cells in module `\pe_fv'.
+Computing hashes of 157 cells of `\pe_fv'.
+Finding duplicate cells in `\pe_fv'.
+Removed a total of 0 cells.
+
+3.8.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe..
+Finding unused cells or wires in module \pe_fv..
+
+3.8.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.
+Optimizing module pe_fv.
+
+3.8.14. Finished fast OPT passes. (There is nothing left to do.)
+
+3.9. Executing WREDUCE pass (reducing word size of cells).
+Converting cell pe_fv.$mul$pe_fv.sv:182$78 ($mul) from unsigned to signed.
+Removed top 24 bits (of 32) from port A of cell pe_fv.$mul$pe_fv.sv:182$78 ($mul).
+Removed top 24 bits (of 32) from port B of cell pe_fv.$mul$pe_fv.sv:182$78 ($mul).
+Removed top 16 bits (of 32) from port Y of cell pe_fv.$mul$pe_fv.sv:182$78 ($mul).
+Removed top 16 bits (of 32) from port B of cell pe_fv.$add$pe_fv.sv:182$79 ($add).
+Converting cell pe_fv.$mul$pe_fv.sv:205$97 ($mul) from unsigned to signed.
+Removed top 24 bits (of 32) from port A of cell pe_fv.$mul$pe_fv.sv:205$97 ($mul).
+Removed top 24 bits (of 32) from port B of cell pe_fv.$mul$pe_fv.sv:205$97 ($mul).
+Removed top 16 bits (of 32) from port Y of cell pe_fv.$mul$pe_fv.sv:205$97 ($mul).
+Removed top 16 bits (of 32) from port B of cell pe_fv.$eq$pe_fv.sv:205$98 ($eq).
+Converting cell pe_fv.$mul$pe_fv.sv:211$99 ($mul) from unsigned to signed.
+Removed top 24 bits (of 32) from port A of cell pe_fv.$mul$pe_fv.sv:211$99 ($mul).
+Removed top 24 bits (of 32) from port B of cell pe_fv.$mul$pe_fv.sv:211$99 ($mul).
+Removed top 16 bits (of 32) from port Y of cell pe_fv.$mul$pe_fv.sv:211$99 ($mul).
+Removed top 16 bits (of 32) from port B of cell pe_fv.$add$pe_fv.sv:210$100 ($add).
+Removed top 24 bits (of 32) from port B of cell pe_fv.$gt$pe_fv.sv:279$124 ($gt).
+Removed top 31 bits (of 32) from port B of cell pe_fv.$lt$pe_fv.sv:285$128 ($lt).
+Removed top 16 bits (of 32) from port B of cell pe_fv.$add$pe_fv.sv:308$167 ($add).
+
+3.10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe..
+Finding unused cells or wires in module \pe_fv..
+
+3.11. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+3.12. Executing OPT pass (performing simple optimizations).
+
+3.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe.
+Optimizing module pe_fv.
+
+3.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Computing hashes of 20 cells of `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Finding duplicate cells in `$paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe'.
+Finding identical cells in module `\pe_fv'.
+Computing hashes of 157 cells of `\pe_fv'.
+Finding duplicate cells in `\pe_fv'.
+Removed a total of 0 cells.
+
+3.12.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe..
+Finding unused cells or wires in module \pe_fv..
+
+3.12.4. Finished fast OPT passes.
+
+3.13. Executing SORT pass.
+
+3.14. Printing statistics.
+
+=== $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       29 wires
+      517 wire bits
+       14 public wires
+      181 public wire bits
+       11 ports
+      125 port bits
+       20 cells
+        2   $add
+        4   $dff
+        1   $mul
+       13   $mux
+
+=== pe_fv ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      152 wires
+      736 wire bits
+       36 public wires
+      150 public wire bits
+        7 ports
+       45 port bits
+      156 cells
+        3   $add
+       25   $check
+       38   $dff
+       17   $eq
+        1   $gt
+       22   $logic_and
+       12   $logic_not
+        1   $lt
+        3   $mul
+       33   $mux
+        1   $reduce_bool
+        1 submodules
+        1   $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      176 pe_fv
+       20 $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe
+
+        +----------Count including submodules.
+        | 
+      181 wires
+     1253 wire bits
+       50 public wires
+      331 public wire bits
+       18 ports
+      170 port bits
+        - memories
+        - memory bits
+        - processes
+      176 cells
+        5   $add
+       25   $check
+       42   $dff
+       17   $eq
+        1   $gt
+       22   $logic_and
+       12   $logic_not
+        1   $lt
+        4   $mul
+       46   $mux
+        1   $reduce_bool
+        1 submodules
+        1   $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe
+
+3.15. Executing CHECK pass (checking for obvious problems).
+Checking module $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe...
+Checking module pe_fv...
+Found and reported 0 problems.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `pe_fv'. Setting top module to pe_fv.
+
+4.1. Analyzing design hierarchy..
+Top module:  \pe_fv
+Used module:     $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe
+
+4.2. Analyzing design hierarchy..
+Top module:  \pe_fv
+Used module:     $paramod$8392c0aee371eac30cfcd917af9a6c37ac869d3e\pe
+Removed 0 unused modules.
+Module pe_fv directly or indirectly contains formal properties -> setting "keep" attribute.
+
+5. Executing jny backend.
+
+6. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: 31515f5856, time: 0.08s, user: 0.02s, system: 0.04s, MEM: 16.75 MB peak
+Yosys 0.66+91 (git sha1 8869ce61d, Release, Clang /usr/bin/clang++ 18.1.8)
+Time spent: 18% 2x hierarchy (0 sec), 16% 5x opt_clean (0 sec), ...

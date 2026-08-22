@@ -1,0 +1,17 @@
+[options]
+mode prove
+depth 20
+
+[engines]
+smtbmc bitwuzla
+
+[script]
+read -define FORMAL
+read -sv decoder.sv
+read -sv decoder_fv.sv
+prep -top decoder_fv
+
+[files]
+../../src/decoder.sv
+decoder_fv.sv
+../common/fv_macros.vh

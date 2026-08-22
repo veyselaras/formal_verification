@@ -1,0 +1,53 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [
+    {"path": ["\\clk"], "edge": "posedge", "offset": 0}
+  ],
+  "signals": [
+    {"path": ["\\clk"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\core_state"], "width": 3, "offset": 0, "init_only": false},
+    {"path": ["\\decode_enable"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\instruction"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\reset"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyinit_procdff_933"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_procdff_934"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_procdff_935"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_procdff_936"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_procdff_937"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\_witness_", "\\anyinit_procdff_938"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\activation_enable"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\activation_func"], "width": 3, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\add_start"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\array_clear_acc"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\array_enable"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\array_weight_load"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\decoded_dst"], "width": 4, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\decoded_flags"], "width": 4, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\decoded_opcode"], "width": 8, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\decoded_src1"], "width": 8, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\decoded_src2"], "width": 8, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\halt"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\is_compute_op"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\is_control_op"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\is_memory_op"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\layernorm_start"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\loop_end"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\loop_start"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\matmul_start"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\mem_read_enable"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\mem_target"], "width": 2, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\mem_write_enable"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\scale_start"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\softmax_start"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\sync_wait"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\transpose_start"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\f_op"], "width": 8, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000"},
+    {"bits": "00000010111111111111111111111111110110"},
+    {"bits": "00000000000000000000000000000000000000"},
+    {"bits": "00000000000000000000000000000000000000"}
+  ]
+}

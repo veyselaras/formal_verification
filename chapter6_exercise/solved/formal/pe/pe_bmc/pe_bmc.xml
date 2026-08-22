@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-21T18:54:55" hostname="Askeladd" package="pe" id="0" name="bmc" tests="24" errors="0" failures="0" time="1" skipped="8">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="bmc" name="build execution" time="0">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:209.21-212.22" time="0" type="ASSERT" location="pe_fv.sv:209.21-212.22" id="a_acc_accumulate">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:204.21-206.22" time="0" type="ASSERT" location="pe_fv.sv:204.21-206.22" id="a_acc_clear_load">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:216.17-216.72" time="0" type="ASSERT" location="pe_fv.sv:216.17-216.72" id="a_acc_hold">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:150.17-150.82" time="0" type="ASSERT" location="pe_fv.sv:150.17-150.82" id="a_east_forward">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:153.17-153.88" time="0" type="ASSERT" location="pe_fv.sv:153.17-153.88" id="a_east_hold">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:147.17-147.65" time="0" type="ASSERT" location="pe_fv.sv:147.17-147.65" id="a_east_zero_on_load">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:307.17-309.18" time="0" type="ASSERT" location="pe_fv.sv:307.17-309.18" id="a_extreme_neg_mult">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:178.17-178.79" time="0" type="ASSERT" location="pe_fv.sv:178.17-178.79" id="a_psum_bypass">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:186.17-186.85" time="0" type="ASSERT" location="pe_fv.sv:186.17-186.85" id="a_psum_hold">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:181.17-183.18" time="0" type="ASSERT" location="pe_fv.sv:181.17-183.18" id="a_psum_mac">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:244.13-244.54" time="0" type="ASSERT" location="pe_fv.sv:244.13-244.54" id="a_reset_acc">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:245.13-245.58" time="0" type="ASSERT" location="pe_fv.sv:245.13-245.58" id="a_reset_east">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:246.13-246.59" time="0" type="ASSERT" location="pe_fv.sv:246.13-246.59" id="a_reset_south">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:243.13-243.57" time="0" type="ASSERT" location="pe_fv.sv:243.13-243.57" id="a_reset_weight">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:127.17-127.76" time="0" type="ASSERT" location="pe_fv.sv:127.17-127.76" id="a_weight_load">
+</testcase>
+<testcase classname="bmc" name="Property ASSERT in pe_fv at pe_fv.sv:130.17-130.82" time="0" type="ASSERT" location="pe_fv.sv:130.17-130.82" id="a_weight_stable">
+</testcase>
+<testcase classname="bmc" name="Property COVER in pe_fv at pe_fv.sv:276.9-280.10" time="0" type="COVER" location="pe_fv.sv:276.9-280.10" id="c_acc_positive">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in pe_fv at pe_fv.sv:288.9-288.69" time="0" type="COVER" location="pe_fv.sv:288.9-288.69" id="c_enable_active">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in pe_fv at pe_fv.sv:290.9-290.70" time="0" type="COVER" location="pe_fv.sv:290.9-290.70" id="c_enable_inactive">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in pe_fv at pe_fv.sv:264.9-268.10" time="0" type="COVER" location="pe_fv.sv:264.9-268.10" id="c_load_then_compute">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in pe_fv at pe_fv.sv:318.13-322.14" time="0" type="COVER" location="pe_fv.sv:318.13-322.14" id="c_max_neg_mult">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in pe_fv at pe_fv.sv:312.13-316.14" time="0" type="COVER" location="pe_fv.sv:312.13-316.14" id="c_max_pos_mult">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in pe_fv at pe_fv.sv:282.9-286.10" time="0" type="COVER" location="pe_fv.sv:282.9-286.10" id="c_negative_psum">
+<skipped />
+</testcase>
+<testcase classname="bmc" name="Property COVER in pe_fv at pe_fv.sv:270.9-274.10" time="0" type="COVER" location="pe_fv.sv:270.9-274.10" id="c_psum_non_zero">
+<skipped />
+</testcase>
+<system-out>SBY 18:54:53 [pe_bmc] Removing directory '/home/veysel/chapter6_exercises/formal/pe/pe_bmc'.
+SBY 18:54:53 [pe_bmc] Copy '/home/veysel/chapter6_exercises/formal/pe/../../src/pe.sv' to '/home/veysel/chapter6_exercises/formal/pe/pe_bmc/src/pe.sv'.
+SBY 18:54:53 [pe_bmc] Copy '/home/veysel/chapter6_exercises/formal/pe/pe_fv.sv' to '/home/veysel/chapter6_exercises/formal/pe/pe_bmc/src/pe_fv.sv'.
+SBY 18:54:53 [pe_bmc] Copy '/home/veysel/chapter6_exercises/formal/pe/../common/fv_macros.vh' to '/home/veysel/chapter6_exercises/formal/pe/pe_bmc/src/fv_macros.vh'.
+SBY 18:54:53 [pe_bmc] engine_0: smtbmc bitwuzla
+SBY 18:54:53 [pe_bmc] base: starting process &quot;cd pe_bmc/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 18:54:53 [pe_bmc] base: finished (returncode=0)
+SBY 18:54:53 [pe_bmc] prep: starting process &quot;cd pe_bmc/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 18:54:53 [pe_bmc] prep: finished (returncode=0)
+SBY 18:54:53 [pe_bmc] smt2: starting process &quot;cd pe_bmc/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 18:54:54 [pe_bmc] smt2: finished (returncode=0)
+SBY 18:54:54 [pe_bmc] engine_0: starting process &quot;cd pe_bmc; yosys-smtbmc -s bitwuzla --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 11..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 11..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 12..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 12..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 13..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 13..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 14..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 14..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 15..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 15..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 16..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 16..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 17..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 17..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 18..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 18..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 19..
+SBY 18:54:55 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 19..
+SBY 18:54:55 [pe_bmc] engine_0: ##   0:00:00  Status: passed
+SBY 18:54:55 [pe_bmc] engine_0: finished (returncode=0)
+SBY 18:54:55 [pe_bmc] engine_0: Status returned by engine: pass
+SBY 18:54:55 [pe_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 18:54:55 [pe_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 18:54:55 [pe_bmc] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 18:54:55 [pe_bmc] summary: engine_0 did not produce any traces
+SBY 18:54:55 [pe_bmc] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

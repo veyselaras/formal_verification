@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-22T15:28:27" hostname="Askeladd" package="decoder" id="0" name="cvr" tests="102" errors="0" failures="0" time="0" skipped="82">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="cvr" name="build execution" time="0">
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:100.17-100.67" time="0" type="ASSERT" location="decoder_fv.sv:100.17-100.67" id="_witness_.check_assert_decoder_fv_sv_100_66">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:101.17-101.66" time="0" type="ASSERT" location="decoder_fv.sv:101.17-101.66" id="_witness_.check_assert_decoder_fv_sv_101_68">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:296.17-296.60" time="0" type="ASSERT" location="decoder_fv.sv:296.17-296.60" id="_witness_.check_assert_decoder_fv_sv_296_255">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:297.17-297.60" time="0" type="ASSERT" location="decoder_fv.sv:297.17-297.60" id="_witness_.check_assert_decoder_fv_sv_297_258">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:298.17-298.60" time="0" type="ASSERT" location="decoder_fv.sv:298.17-298.60" id="_witness_.check_assert_decoder_fv_sv_298_261">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:299.17-299.60" time="0" type="ASSERT" location="decoder_fv.sv:299.17-299.60" id="_witness_.check_assert_decoder_fv_sv_299_264">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:97.17-97.68" time="0" type="ASSERT" location="decoder_fv.sv:97.17-97.68" id="_witness_.check_assert_decoder_fv_sv_97_60">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:98.17-98.68" time="0" type="ASSERT" location="decoder_fv.sv:98.17-98.68" id="_witness_.check_assert_decoder_fv_sv_98_62">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:99.17-99.68" time="0" type="ASSERT" location="decoder_fv.sv:99.17-99.68" id="_witness_.check_assert_decoder_fv_sv_99_64">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:144.13-145.91" time="0" type="ASSERT" location="decoder_fv.sv:144.13-145.91" id="a_act_enable">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:171.13-173.59" time="0" type="ASSERT" location="decoder_fv.sv:171.13-173.59" id="a_act_func">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:132.13-132.79" time="0" type="ASSERT" location="decoder_fv.sv:132.13-132.79" id="a_add_start">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:128.13-128.82" time="0" type="ASSERT" location="decoder_fv.sv:128.13-128.82" id="a_array_enable">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:129.13-129.82" time="0" type="ASSERT" location="decoder_fv.sv:129.13-129.82" id="a_array_weight_load">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:176.13-177.72" time="0" type="ASSERT" location="decoder_fv.sv:176.13-177.72" id="a_clear_acc">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:138.13-138.80" time="0" type="ASSERT" location="decoder_fv.sv:138.13-138.80" id="a_halt">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:225.17-225.95" time="0" type="ASSERT" location="decoder_fv.sv:225.17-225.95" id="a_hold_act_en">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:226.17-226.91" time="0" type="ASSERT" location="decoder_fv.sv:226.17-226.91" id="a_hold_act_func">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:232.17-232.79" time="0" type="ASSERT" location="decoder_fv.sv:232.17-232.79" id="a_hold_add">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:223.17-223.91" time="0" type="ASSERT" location="decoder_fv.sv:223.17-223.91" id="a_hold_arr_clr">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:221.17-221.85" time="0" type="ASSERT" location="decoder_fv.sv:221.17-221.85" id="a_hold_arr_en">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:222.17-222.95" time="0" type="ASSERT" location="decoder_fv.sv:222.17-222.95" id="a_hold_arr_wl">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:213.17-213.83" time="0" type="ASSERT" location="decoder_fv.sv:213.17-213.83" id="a_hold_dst">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:212.17-212.87" time="0" type="ASSERT" location="decoder_fv.sv:212.17-212.87" id="a_hold_flags">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:238.17-238.69" time="0" type="ASSERT" location="decoder_fv.sv:238.17-238.69" id="a_hold_halt">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:241.17-241.87" time="0" type="ASSERT" location="decoder_fv.sv:241.17-241.87" id="a_hold_is_comp">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:242.17-242.87" time="0" type="ASSERT" location="decoder_fv.sv:242.17-242.87" id="a_hold_is_ctrl">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:240.17-240.85" time="0" type="ASSERT" location="decoder_fv.sv:240.17-240.85" id="a_hold_is_mem">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:230.17-230.91" time="0" type="ASSERT" location="decoder_fv.sv:230.17-230.91" id="a_hold_layernorm">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:237.17-237.77" time="0" type="ASSERT" location="decoder_fv.sv:237.17-237.77" id="a_hold_loop_end">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:236.17-236.81" time="0" type="ASSERT" location="decoder_fv.sv:236.17-236.81" id="a_hold_loop_st">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:228.17-228.85" time="0" type="ASSERT" location="decoder_fv.sv:228.17-228.85" id="a_hold_matmul">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:217.17-217.91" time="0" type="ASSERT" location="decoder_fv.sv:217.17-217.91" id="a_hold_mem_rd">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:219.17-219.81" time="0" type="ASSERT" location="decoder_fv.sv:219.17-219.81" id="a_hold_mem_tgt">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:218.17-218.93" time="0" type="ASSERT" location="decoder_fv.sv:218.17-218.93" id="a_hold_mem_wr">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:211.17-211.88" time="0" type="ASSERT" location="decoder_fv.sv:211.17-211.88" id="a_hold_opcode">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:233.17-233.83" time="0" type="ASSERT" location="decoder_fv.sv:233.17-233.83" id="a_hold_scale">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:229.17-229.87" time="0" type="ASSERT" location="decoder_fv.sv:229.17-229.87" id="a_hold_softmax">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:214.17-214.85" time="0" type="ASSERT" location="decoder_fv.sv:214.17-214.85" id="a_hold_src1">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:215.17-215.85" time="0" type="ASSERT" location="decoder_fv.sv:215.17-215.85" id="a_hold_src2">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:235.17-235.79" time="0" type="ASSERT" location="decoder_fv.sv:235.17-235.79" id="a_hold_sync">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:231.17-231.91" time="0" type="ASSERT" location="decoder_fv.sv:231.17-231.91" id="a_hold_transpose">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:150.13-155.38" time="0" type="ASSERT" location="decoder_fv.sv:150.13-155.38" id="a_is_compute">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:158.13-161.36" time="0" type="ASSERT" location="decoder_fv.sv:158.13-161.36" id="a_is_control">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:147.13-148.84" time="0" type="ASSERT" location="decoder_fv.sv:147.13-148.84" id="a_is_memory">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:133.13-133.85" time="0" type="ASSERT" location="decoder_fv.sv:133.13-133.85" id="a_layernorm_start">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:164.13-164.56" time="0" type="ASSERT" location="decoder_fv.sv:164.13-164.56" id="a_loop_end_dead">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:137.13-137.80" time="0" type="ASSERT" location="decoder_fv.sv:137.13-137.80" id="a_loop_start">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:127.13-127.82" time="0" type="ASSERT" location="decoder_fv.sv:127.13-127.82" id="a_matmul_start">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:141.13-142.62" time="0" type="ASSERT" location="decoder_fv.sv:141.13-142.62" id="a_mem_read">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:167.13-169.55" time="0" type="ASSERT" location="decoder_fv.sv:167.13-169.55" id="a_mem_target">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:130.13-130.81" time="0" type="ASSERT" location="decoder_fv.sv:130.13-130.81" id="a_mem_write">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:266.13-266.65" time="0" type="ASSERT" location="decoder_fv.sv:266.13-266.65" id="a_rst_act_en">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:267.13-267.67" time="0" type="ASSERT" location="decoder_fv.sv:267.13-267.67" id="a_rst_act_func">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:273.13-273.65" time="0" type="ASSERT" location="decoder_fv.sv:273.13-273.65" id="a_rst_add">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:264.13-264.65" time="0" type="ASSERT" location="decoder_fv.sv:264.13-264.65" id="a_rst_arr_clr">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:262.13-262.65" time="0" type="ASSERT" location="decoder_fv.sv:262.13-262.65" id="a_rst_arr_en">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:263.13-263.65" time="0" type="ASSERT" location="decoder_fv.sv:263.13-263.65" id="a_rst_arr_wl">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:254.13-254.65" time="0" type="ASSERT" location="decoder_fv.sv:254.13-254.65" id="a_rst_dst">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:253.13-253.65" time="0" type="ASSERT" location="decoder_fv.sv:253.13-253.65" id="a_rst_flags">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:279.13-279.65" time="0" type="ASSERT" location="decoder_fv.sv:279.13-279.65" id="a_rst_halt">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:282.13-282.65" time="0" type="ASSERT" location="decoder_fv.sv:282.13-282.65" id="a_rst_is_comp">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:283.13-283.65" time="0" type="ASSERT" location="decoder_fv.sv:283.13-283.65" id="a_rst_is_ctrl">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:281.13-281.65" time="0" type="ASSERT" location="decoder_fv.sv:281.13-281.65" id="a_rst_is_mem">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:271.13-271.65" time="0" type="ASSERT" location="decoder_fv.sv:271.13-271.65" id="a_rst_layernorm">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:278.13-278.65" time="0" type="ASSERT" location="decoder_fv.sv:278.13-278.65" id="a_rst_loop_end">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:277.13-277.65" time="0" type="ASSERT" location="decoder_fv.sv:277.13-277.65" id="a_rst_loop_st">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:269.13-269.65" time="0" type="ASSERT" location="decoder_fv.sv:269.13-269.65" id="a_rst_matmul">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:258.13-258.65" time="0" type="ASSERT" location="decoder_fv.sv:258.13-258.65" id="a_rst_mem_rd">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:260.13-260.66" time="0" type="ASSERT" location="decoder_fv.sv:260.13-260.66" id="a_rst_mem_tgt">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:259.13-259.65" time="0" type="ASSERT" location="decoder_fv.sv:259.13-259.65" id="a_rst_mem_wr">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:252.13-252.66" time="0" type="ASSERT" location="decoder_fv.sv:252.13-252.66" id="a_rst_opcode">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:274.13-274.65" time="0" type="ASSERT" location="decoder_fv.sv:274.13-274.65" id="a_rst_scale">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:270.13-270.65" time="0" type="ASSERT" location="decoder_fv.sv:270.13-270.65" id="a_rst_softmax">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:255.13-255.66" time="0" type="ASSERT" location="decoder_fv.sv:255.13-255.66" id="a_rst_src1">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:256.13-256.66" time="0" type="ASSERT" location="decoder_fv.sv:256.13-256.66" id="a_rst_src2">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:276.13-276.65" time="0" type="ASSERT" location="decoder_fv.sv:276.13-276.65" id="a_rst_sync">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:272.13-272.65" time="0" type="ASSERT" location="decoder_fv.sv:272.13-272.65" id="a_rst_transpose">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:135.13-135.81" time="0" type="ASSERT" location="decoder_fv.sv:135.13-135.81" id="a_scale_start">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:131.13-131.83" time="0" type="ASSERT" location="decoder_fv.sv:131.13-131.83" id="a_softmax_start">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:136.13-136.80" time="0" type="ASSERT" location="decoder_fv.sv:136.13-136.80" id="a_sync_wait">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in decoder_fv at decoder_fv.sv:134.13-134.85" time="0" type="ASSERT" location="decoder_fv.sv:134.13-134.85" id="a_transpose_start">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:319.13-319.54" time="0" type="COVER" location="decoder_fv.sv:319.13-319.54" id="c_act_gelu" tracefile="engine_0/trace16.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:318.13-318.54" time="0" type="COVER" location="decoder_fv.sv:318.13-318.54" id="c_act_relu" tracefile="engine_0/trace15.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:320.13-320.54" time="0" type="COVER" location="decoder_fv.sv:320.13-320.54" id="c_act_silu" tracefile="engine_0/trace12.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:322.13-322.49" time="0" type="COVER" location="decoder_fv.sv:322.13-322.49" id="c_add" tracefile="engine_0/trace14.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:328.13-328.50" time="0" type="COVER" location="decoder_fv.sv:328.13-328.50" id="c_halt" tracefile="engine_0/trace13.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:330.13-330.49" time="0" type="COVER" location="decoder_fv.sv:330.13-330.49" id="c_invalid" tracefile="engine_0/trace11.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:323.13-323.55" time="0" type="COVER" location="decoder_fv.sv:323.13-323.55" id="c_layernorm" tracefile="engine_0/trace10.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:315.13-315.52" time="0" type="COVER" location="decoder_fv.sv:315.13-315.52" id="c_load_a" tracefile="engine_0/trace9.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:314.13-314.52" time="0" type="COVER" location="decoder_fv.sv:314.13-314.52" id="c_load_w" tracefile="engine_0/trace8.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:327.13-327.50" time="0" type="COVER" location="decoder_fv.sv:327.13-327.50" id="c_loop" tracefile="engine_0/trace7.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:316.13-316.52" time="0" type="COVER" location="decoder_fv.sv:316.13-316.52" id="c_matmul" tracefile="engine_0/trace17.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:333.13-333.82" time="0" type="COVER" location="decoder_fv.sv:333.13-333.82" id="c_matmul_acc" tracefile="engine_0/trace17.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:334.13-334.82" time="0" type="COVER" location="decoder_fv.sv:334.13-334.82" id="c_matmul_noacc" tracefile="engine_0/trace18.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:341.13-341.86" time="0" type="COVER" location="decoder_fv.sv:341.13-341.86" id="c_no_decode" tracefile="engine_0/trace6.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:313.13-313.49" time="0" type="COVER" location="decoder_fv.sv:313.13-313.49" id="c_nop" tracefile="engine_0/trace5.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:325.13-325.51" time="0" type="COVER" location="decoder_fv.sv:325.13-325.51" id="c_scale" tracefile="engine_0/trace4.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:321.13-321.53" time="0" type="COVER" location="decoder_fv.sv:321.13-321.53" id="c_softmax" tracefile="engine_0/trace3.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:317.13-317.51" time="0" type="COVER" location="decoder_fv.sv:317.13-317.51" id="c_store" tracefile="engine_0/trace2.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:326.13-326.50" time="0" type="COVER" location="decoder_fv.sv:326.13-326.50" id="c_sync" tracefile="engine_0/trace1.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in decoder_fv at decoder_fv.sv:324.13-324.55" time="0" type="COVER" location="decoder_fv.sv:324.13-324.55" id="c_transpose" tracefile="engine_0/trace0.vcd">
+</testcase>
+<system-out>SBY 15:28:26 [decoder_cvr] Removing directory '/home/veysel/chapter6_exercises/formal/decoder/decoder_cvr'.
+SBY 15:28:26 [decoder_cvr] Copy '/home/veysel/chapter6_exercises/formal/decoder/../../src/decoder.sv' to '/home/veysel/chapter6_exercises/formal/decoder/decoder_cvr/src/decoder.sv'.
+SBY 15:28:26 [decoder_cvr] Copy '/home/veysel/chapter6_exercises/formal/decoder/decoder_fv.sv' to '/home/veysel/chapter6_exercises/formal/decoder/decoder_cvr/src/decoder_fv.sv'.
+SBY 15:28:26 [decoder_cvr] Copy '/home/veysel/chapter6_exercises/formal/decoder/../common/fv_macros.vh' to '/home/veysel/chapter6_exercises/formal/decoder/decoder_cvr/src/fv_macros.vh'.
+SBY 15:28:26 [decoder_cvr] engine_0: smtbmc bitwuzla
+SBY 15:28:26 [decoder_cvr] base: starting process &quot;cd decoder_cvr/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 15:28:26 [decoder_cvr] base: finished (returncode=0)
+SBY 15:28:26 [decoder_cvr] prep: starting process &quot;cd decoder_cvr/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 15:28:26 [decoder_cvr] prep: finished (returncode=0)
+SBY 15:28:26 [decoder_cvr] smt2: starting process &quot;cd decoder_cvr/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 15:28:26 [decoder_cvr] smt2: finished (returncode=0)
+SBY 15:28:26 [decoder_cvr] engine_0: starting process &quot;cd decoder_cvr; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 20  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_transpose
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_sync
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_store
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_softmax
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_scale
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_nop
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace5.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace5_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace5.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace5.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_no_decode
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace6.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace6_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace6.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace6.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_loop
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace7.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace7_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace7.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace7.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_load_w
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace8.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace8_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace8.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace8.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_load_a
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace9.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace9_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace9.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace9.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_layernorm
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace10.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace10_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace10.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace10.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_invalid
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace11.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace11_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace11.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace11.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_act_silu
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace12.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace12_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace12.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace12.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_halt
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace13.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace13_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace13.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace13.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_add
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace14.vcd
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace14_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace14.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace14.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_act_relu
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace15.vcd
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace15_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace15.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace15.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_act_gelu
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace16.vcd
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace16_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace16.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace16.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_matmul
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_matmul_acc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace17.vcd
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace17_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace17.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace17.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_matmul_noacc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace18.vcd
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace18_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace18.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace18.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Status: passed
+SBY 15:28:27 [decoder_cvr] engine_0: finished (returncode=0)
+SBY 15:28:27 [decoder_cvr] engine_0: Status returned by engine: pass
+SBY 15:28:27 [decoder_cvr] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 15:28:27 [decoder_cvr] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 15:28:27 [decoder_cvr] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 15:28:27 [decoder_cvr] summary: cover trace: decoder_cvr/engine_0/trace0.vcd
+SBY 15:28:27 [decoder_cvr] summary:   reached cover statement decoder_fv.c_transpose at decoder_fv.sv:324.13-324.55 step 3
+SBY 15:28:27 [decoder_cvr] summary: cover trace: decoder_cvr/engine_0/trace1.vcd
+SBY 15:28:27 [decoder_cvr] summary:   reached cover statement decoder_fv.c_sync at decoder_fv.sv:326.13-326.50 step 3
+SBY 15:28:27 [decoder_cvr] summary: cover trace: decoder_cvr/engine_0/trace10.vcd
+SBY 15:28:27 [decoder_cvr] summary:   reached cover statement decoder_fv.c_layernorm at decoder_fv.sv:323.13-323.55 step 3
+SBY 15:28:27 [decoder_cvr] summary: cover trace: decoder_cvr/engine_0/trace11.vcd
+SBY 15:28:27 [decoder_cvr] summary:   reached cover statement decoder_fv.c_invalid at decoder_fv.sv:330.13-330.49 step 3
+SBY 15:28:27 [decoder_cvr] summary: cover trace: decoder_cvr/engine_0/trace12.vcd
+SBY 15:28:27 [decoder_cvr] summary:   reached cover statement decoder_fv.c_act_silu at decoder_fv.sv:320.13-320.54 step 3
+SBY 15:28:27 [decoder_cvr] summary: and 14 further traces
+SBY 15:28:27 [decoder_cvr] summary: see decoder_cvr/PASS for a complete summary
+SBY 15:28:27 [decoder_cvr] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

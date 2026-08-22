@@ -1,0 +1,61 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc bitwuzla) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement decoder_fv.c_transpose at decoder_fv.sv:324.13-324.55 step 3
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement decoder_fv.c_sync at decoder_fv.sv:326.13-326.50 step 3
+cover trace: engine_0/trace10.vcd
+cover trace: engine_0/trace10.yw
+  reached cover statement decoder_fv.c_layernorm at decoder_fv.sv:323.13-323.55 step 3
+cover trace: engine_0/trace11.vcd
+cover trace: engine_0/trace11.yw
+  reached cover statement decoder_fv.c_invalid at decoder_fv.sv:330.13-330.49 step 3
+cover trace: engine_0/trace12.vcd
+cover trace: engine_0/trace12.yw
+  reached cover statement decoder_fv.c_act_silu at decoder_fv.sv:320.13-320.54 step 3
+cover trace: engine_0/trace13.vcd
+cover trace: engine_0/trace13.yw
+  reached cover statement decoder_fv.c_halt at decoder_fv.sv:328.13-328.50 step 3
+cover trace: engine_0/trace14.vcd
+cover trace: engine_0/trace14.yw
+  reached cover statement decoder_fv.c_add at decoder_fv.sv:322.13-322.49 step 3
+cover trace: engine_0/trace15.vcd
+cover trace: engine_0/trace15.yw
+  reached cover statement decoder_fv.c_act_relu at decoder_fv.sv:318.13-318.54 step 3
+cover trace: engine_0/trace16.vcd
+cover trace: engine_0/trace16.yw
+  reached cover statement decoder_fv.c_act_gelu at decoder_fv.sv:319.13-319.54 step 3
+cover trace: engine_0/trace17.vcd
+cover trace: engine_0/trace17.yw
+  reached cover statement decoder_fv.c_matmul at decoder_fv.sv:316.13-316.52 step 3
+  reached cover statement decoder_fv.c_matmul_acc at decoder_fv.sv:333.13-333.82 step 3
+cover trace: engine_0/trace18.vcd
+cover trace: engine_0/trace18.yw
+  reached cover statement decoder_fv.c_matmul_noacc at decoder_fv.sv:334.13-334.82 step 3
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement decoder_fv.c_store at decoder_fv.sv:317.13-317.51 step 3
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement decoder_fv.c_softmax at decoder_fv.sv:321.13-321.53 step 3
+cover trace: engine_0/trace4.vcd
+cover trace: engine_0/trace4.yw
+  reached cover statement decoder_fv.c_scale at decoder_fv.sv:325.13-325.51 step 3
+cover trace: engine_0/trace5.vcd
+cover trace: engine_0/trace5.yw
+  reached cover statement decoder_fv.c_nop at decoder_fv.sv:313.13-313.49 step 3
+cover trace: engine_0/trace6.vcd
+cover trace: engine_0/trace6.yw
+  reached cover statement decoder_fv.c_no_decode at decoder_fv.sv:341.13-341.86 step 3
+cover trace: engine_0/trace7.vcd
+cover trace: engine_0/trace7.yw
+  reached cover statement decoder_fv.c_loop at decoder_fv.sv:327.13-327.50 step 3
+cover trace: engine_0/trace8.vcd
+cover trace: engine_0/trace8.yw
+  reached cover statement decoder_fv.c_load_w at decoder_fv.sv:314.13-314.52 step 3
+cover trace: engine_0/trace9.vcd
+cover trace: engine_0/trace9.yw
+  reached cover statement decoder_fv.c_load_a at decoder_fv.sv:315.13-315.52 step 3

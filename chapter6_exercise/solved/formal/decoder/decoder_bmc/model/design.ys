@@ -1,0 +1,10 @@
+# running in decoder_bmc/src/
+read -define FORMAL
+read -sv decoder.sv
+read -sv decoder_fv.sv
+prep -top decoder_fv
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

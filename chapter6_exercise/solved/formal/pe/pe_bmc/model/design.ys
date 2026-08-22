@@ -1,0 +1,12 @@
+# running in pe_bmc/src/
+read -define FORMAL
+
+read -sv pe.sv
+read -sv pe_fv.sv
+
+prep -top pe_fv
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-21T19:00:27" hostname="Askeladd" package="pe" id="0" name="cvr" tests="24" errors="0" failures="0" time="0" skipped="16">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="cvr" name="build execution" time="0">
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:209.21-212.22" time="0" type="ASSERT" location="pe_fv.sv:209.21-212.22" id="a_acc_accumulate">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:204.21-206.22" time="0" type="ASSERT" location="pe_fv.sv:204.21-206.22" id="a_acc_clear_load">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:216.17-216.72" time="0" type="ASSERT" location="pe_fv.sv:216.17-216.72" id="a_acc_hold">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:150.17-150.82" time="0" type="ASSERT" location="pe_fv.sv:150.17-150.82" id="a_east_forward">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:153.17-153.88" time="0" type="ASSERT" location="pe_fv.sv:153.17-153.88" id="a_east_hold">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:147.17-147.65" time="0" type="ASSERT" location="pe_fv.sv:147.17-147.65" id="a_east_zero_on_load">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:307.17-309.18" time="0" type="ASSERT" location="pe_fv.sv:307.17-309.18" id="a_extreme_neg_mult">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:178.17-178.79" time="0" type="ASSERT" location="pe_fv.sv:178.17-178.79" id="a_psum_bypass">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:186.17-186.85" time="0" type="ASSERT" location="pe_fv.sv:186.17-186.85" id="a_psum_hold">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:181.17-183.18" time="0" type="ASSERT" location="pe_fv.sv:181.17-183.18" id="a_psum_mac">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:244.13-244.54" time="0" type="ASSERT" location="pe_fv.sv:244.13-244.54" id="a_reset_acc">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:245.13-245.58" time="0" type="ASSERT" location="pe_fv.sv:245.13-245.58" id="a_reset_east">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:246.13-246.59" time="0" type="ASSERT" location="pe_fv.sv:246.13-246.59" id="a_reset_south">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:243.13-243.57" time="0" type="ASSERT" location="pe_fv.sv:243.13-243.57" id="a_reset_weight">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:127.17-127.76" time="0" type="ASSERT" location="pe_fv.sv:127.17-127.76" id="a_weight_load">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property ASSERT in pe_fv at pe_fv.sv:130.17-130.82" time="0" type="ASSERT" location="pe_fv.sv:130.17-130.82" id="a_weight_stable">
+<skipped />
+</testcase>
+<testcase classname="cvr" name="Property COVER in pe_fv at pe_fv.sv:276.9-280.10" time="0" type="COVER" location="pe_fv.sv:276.9-280.10" id="c_acc_positive" tracefile="engine_0/trace5.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in pe_fv at pe_fv.sv:288.9-288.69" time="0" type="COVER" location="pe_fv.sv:288.9-288.69" id="c_enable_active" tracefile="engine_0/trace2.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in pe_fv at pe_fv.sv:290.9-290.70" time="0" type="COVER" location="pe_fv.sv:290.9-290.70" id="c_enable_inactive" tracefile="engine_0/trace1.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in pe_fv at pe_fv.sv:264.9-268.10" time="0" type="COVER" location="pe_fv.sv:264.9-268.10" id="c_load_then_compute" tracefile="engine_0/trace0.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in pe_fv at pe_fv.sv:318.13-322.14" time="0" type="COVER" location="pe_fv.sv:318.13-322.14" id="c_max_neg_mult" tracefile="engine_0/trace6.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in pe_fv at pe_fv.sv:312.13-316.14" time="0" type="COVER" location="pe_fv.sv:312.13-316.14" id="c_max_pos_mult" tracefile="engine_0/trace5.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in pe_fv at pe_fv.sv:282.9-286.10" time="0" type="COVER" location="pe_fv.sv:282.9-286.10" id="c_negative_psum" tracefile="engine_0/trace4.vcd">
+</testcase>
+<testcase classname="cvr" name="Property COVER in pe_fv at pe_fv.sv:270.9-274.10" time="0" type="COVER" location="pe_fv.sv:270.9-274.10" id="c_psum_non_zero" tracefile="engine_0/trace3.vcd">
+</testcase>
+<system-out>SBY 19:00:27 [pe_cvr] Removing directory '/home/veysel/chapter6_exercises/formal/pe/pe_cvr'.
+SBY 19:00:27 [pe_cvr] Copy '/home/veysel/chapter6_exercises/formal/pe/../../src/pe.sv' to '/home/veysel/chapter6_exercises/formal/pe/pe_cvr/src/pe.sv'.
+SBY 19:00:27 [pe_cvr] Copy '/home/veysel/chapter6_exercises/formal/pe/pe_fv.sv' to '/home/veysel/chapter6_exercises/formal/pe/pe_cvr/src/pe_fv.sv'.
+SBY 19:00:27 [pe_cvr] Copy '/home/veysel/chapter6_exercises/formal/pe/../common/fv_macros.vh' to '/home/veysel/chapter6_exercises/formal/pe/pe_cvr/src/fv_macros.vh'.
+SBY 19:00:27 [pe_cvr] engine_0: smtbmc bitwuzla
+SBY 19:00:27 [pe_cvr] base: starting process &quot;cd pe_cvr/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 19:00:27 [pe_cvr] base: finished (returncode=0)
+SBY 19:00:27 [pe_cvr] prep: starting process &quot;cd pe_cvr/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 19:00:27 [pe_cvr] prep: finished (returncode=0)
+SBY 19:00:27 [pe_cvr] smt2: starting process &quot;cd pe_cvr/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 19:00:27 [pe_cvr] smt2: finished (returncode=0)
+SBY 19:00:27 [pe_cvr] engine_0: starting process &quot;cd pe_cvr; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 20  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Reached cover statement in step 2 at pe_fv: c_load_then_compute
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Reached cover statement in step 2 at pe_fv: c_enable_inactive
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Reached cover statement in step 2 at pe_fv: c_enable_active
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at pe_fv: c_psum_non_zero
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at pe_fv: c_negative_psum
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Reached cover statement in step 4 at pe_fv: c_acc_positive
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Reached cover statement in step 4 at pe_fv: c_max_pos_mult
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace5.vcd
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace5_tb.v
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace5.smtc
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace5.yw
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Reached cover statement in step 4 at pe_fv: c_max_neg_mult
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace6.vcd
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace6_tb.v
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace6.smtc
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace6.yw
+SBY 19:00:27 [pe_cvr] engine_0: ##   0:00:00  Status: passed
+SBY 19:00:27 [pe_cvr] engine_0: finished (returncode=0)
+SBY 19:00:27 [pe_cvr] engine_0: Status returned by engine: pass
+SBY 19:00:27 [pe_cvr] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:00:27 [pe_cvr] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 19:00:27 [pe_cvr] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 19:00:27 [pe_cvr] summary: cover trace: pe_cvr/engine_0/trace0.vcd
+SBY 19:00:27 [pe_cvr] summary:   reached cover statement pe_fv.c_load_then_compute at pe_fv.sv:264.9-268.10 step 2
+SBY 19:00:27 [pe_cvr] summary: cover trace: pe_cvr/engine_0/trace1.vcd
+SBY 19:00:27 [pe_cvr] summary:   reached cover statement pe_fv.c_enable_inactive at pe_fv.sv:290.9-290.70 step 2
+SBY 19:00:27 [pe_cvr] summary: cover trace: pe_cvr/engine_0/trace2.vcd
+SBY 19:00:27 [pe_cvr] summary:   reached cover statement pe_fv.c_enable_active at pe_fv.sv:288.9-288.69 step 2
+SBY 19:00:27 [pe_cvr] summary: cover trace: pe_cvr/engine_0/trace3.vcd
+SBY 19:00:27 [pe_cvr] summary:   reached cover statement pe_fv.c_psum_non_zero at pe_fv.sv:270.9-274.10 step 3
+SBY 19:00:27 [pe_cvr] summary: cover trace: pe_cvr/engine_0/trace4.vcd
+SBY 19:00:27 [pe_cvr] summary:   reached cover statement pe_fv.c_negative_psum at pe_fv.sv:282.9-286.10 step 3
+SBY 19:00:27 [pe_cvr] summary: and 2 further traces
+SBY 19:00:27 [pe_cvr] summary: see pe_cvr/PASS for a complete summary
+SBY 19:00:27 [pe_cvr] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,150 @@
+SBY 15:28:26 [decoder_cvr] Removing directory '/home/veysel/chapter6_exercises/formal/decoder/decoder_cvr'.
+SBY 15:28:26 [decoder_cvr] Copy '/home/veysel/chapter6_exercises/formal/decoder/../../src/decoder.sv' to '/home/veysel/chapter6_exercises/formal/decoder/decoder_cvr/src/decoder.sv'.
+SBY 15:28:26 [decoder_cvr] Copy '/home/veysel/chapter6_exercises/formal/decoder/decoder_fv.sv' to '/home/veysel/chapter6_exercises/formal/decoder/decoder_cvr/src/decoder_fv.sv'.
+SBY 15:28:26 [decoder_cvr] Copy '/home/veysel/chapter6_exercises/formal/decoder/../common/fv_macros.vh' to '/home/veysel/chapter6_exercises/formal/decoder/decoder_cvr/src/fv_macros.vh'.
+SBY 15:28:26 [decoder_cvr] engine_0: smtbmc bitwuzla
+SBY 15:28:26 [decoder_cvr] base: starting process "cd decoder_cvr/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 15:28:26 [decoder_cvr] base: finished (returncode=0)
+SBY 15:28:26 [decoder_cvr] prep: starting process "cd decoder_cvr/model; yosys -ql design_prep.log design_prep.ys"
+SBY 15:28:26 [decoder_cvr] prep: finished (returncode=0)
+SBY 15:28:26 [decoder_cvr] smt2: starting process "cd decoder_cvr/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 15:28:26 [decoder_cvr] smt2: finished (returncode=0)
+SBY 15:28:26 [decoder_cvr] engine_0: starting process "cd decoder_cvr; yosys-smtbmc -s bitwuzla --presat --unroll -c --noprogress -t 20  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_transpose
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_sync
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_store
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_softmax
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_scale
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_nop
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace5.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace5_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace5.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace5.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_no_decode
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace6.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace6_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace6.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace6.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_loop
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace7.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace7_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace7.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace7.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_load_w
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace8.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace8_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace8.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace8.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_load_a
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace9.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace9_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace9.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace9.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_layernorm
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace10.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace10_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace10.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace10.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_invalid
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace11.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace11_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace11.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace11.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_act_silu
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace12.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace12_tb.v
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace12.smtc
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace12.yw
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_halt
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace13.vcd
+SBY 15:28:26 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace13_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace13.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace13.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_add
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace14.vcd
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace14_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace14.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace14.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_act_relu
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace15.vcd
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace15_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace15.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace15.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_act_gelu
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace16.vcd
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace16_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace16.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace16.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_matmul
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_matmul_acc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace17.vcd
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace17_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace17.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace17.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Reached cover statement in step 3 at decoder_fv: c_matmul_noacc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace18.vcd
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace18_tb.v
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace18.smtc
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace18.yw
+SBY 15:28:27 [decoder_cvr] engine_0: ##   0:00:00  Status: passed
+SBY 15:28:27 [decoder_cvr] engine_0: finished (returncode=0)
+SBY 15:28:27 [decoder_cvr] engine_0: Status returned by engine: pass
+SBY 15:28:27 [decoder_cvr] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 15:28:27 [decoder_cvr] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 15:28:27 [decoder_cvr] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 15:28:27 [decoder_cvr] summary: cover trace: decoder_cvr/engine_0/trace0.vcd
+SBY 15:28:27 [decoder_cvr] summary:   reached cover statement decoder_fv.c_transpose at decoder_fv.sv:324.13-324.55 step 3
+SBY 15:28:27 [decoder_cvr] summary: cover trace: decoder_cvr/engine_0/trace1.vcd
+SBY 15:28:27 [decoder_cvr] summary:   reached cover statement decoder_fv.c_sync at decoder_fv.sv:326.13-326.50 step 3
+SBY 15:28:27 [decoder_cvr] summary: cover trace: decoder_cvr/engine_0/trace10.vcd
+SBY 15:28:27 [decoder_cvr] summary:   reached cover statement decoder_fv.c_layernorm at decoder_fv.sv:323.13-323.55 step 3
+SBY 15:28:27 [decoder_cvr] summary: cover trace: decoder_cvr/engine_0/trace11.vcd
+SBY 15:28:27 [decoder_cvr] summary:   reached cover statement decoder_fv.c_invalid at decoder_fv.sv:330.13-330.49 step 3
+SBY 15:28:27 [decoder_cvr] summary: cover trace: decoder_cvr/engine_0/trace12.vcd
+SBY 15:28:27 [decoder_cvr] summary:   reached cover statement decoder_fv.c_act_silu at decoder_fv.sv:320.13-320.54 step 3
+SBY 15:28:27 [decoder_cvr] summary: and 14 further traces
+SBY 15:28:27 [decoder_cvr] summary: see decoder_cvr/PASS for a complete summary
+SBY 15:28:27 [decoder_cvr] DONE (PASS, rc=0)

@@ -1,0 +1,61 @@
+SBY 18:54:53 [pe_bmc] Removing directory '/home/veysel/chapter6_exercises/formal/pe/pe_bmc'.
+SBY 18:54:53 [pe_bmc] Copy '/home/veysel/chapter6_exercises/formal/pe/../../src/pe.sv' to '/home/veysel/chapter6_exercises/formal/pe/pe_bmc/src/pe.sv'.
+SBY 18:54:53 [pe_bmc] Copy '/home/veysel/chapter6_exercises/formal/pe/pe_fv.sv' to '/home/veysel/chapter6_exercises/formal/pe/pe_bmc/src/pe_fv.sv'.
+SBY 18:54:53 [pe_bmc] Copy '/home/veysel/chapter6_exercises/formal/pe/../common/fv_macros.vh' to '/home/veysel/chapter6_exercises/formal/pe/pe_bmc/src/fv_macros.vh'.
+SBY 18:54:53 [pe_bmc] engine_0: smtbmc bitwuzla
+SBY 18:54:53 [pe_bmc] base: starting process "cd pe_bmc/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 18:54:53 [pe_bmc] base: finished (returncode=0)
+SBY 18:54:53 [pe_bmc] prep: starting process "cd pe_bmc/model; yosys -ql design_prep.log design_prep.ys"
+SBY 18:54:53 [pe_bmc] prep: finished (returncode=0)
+SBY 18:54:53 [pe_bmc] smt2: starting process "cd pe_bmc/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 18:54:54 [pe_bmc] smt2: finished (returncode=0)
+SBY 18:54:54 [pe_bmc] engine_0: starting process "cd pe_bmc; yosys-smtbmc -s bitwuzla --presat --unroll --noprogress -t 20  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Solver: bitwuzla
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 10..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 10..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 11..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 11..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 12..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 12..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 13..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 13..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 14..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 14..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 15..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 15..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 16..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 16..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 17..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 17..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 18..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 18..
+SBY 18:54:54 [pe_bmc] engine_0: ##   0:00:00  Checking assumptions in step 19..
+SBY 18:54:55 [pe_bmc] engine_0: ##   0:00:00  Checking assertions in step 19..
+SBY 18:54:55 [pe_bmc] engine_0: ##   0:00:00  Status: passed
+SBY 18:54:55 [pe_bmc] engine_0: finished (returncode=0)
+SBY 18:54:55 [pe_bmc] engine_0: Status returned by engine: pass
+SBY 18:54:55 [pe_bmc] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 18:54:55 [pe_bmc] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:01 (1)
+SBY 18:54:55 [pe_bmc] summary: engine_0 (smtbmc bitwuzla) returned pass
+SBY 18:54:55 [pe_bmc] summary: engine_0 did not produce any traces
+SBY 18:54:55 [pe_bmc] DONE (PASS, rc=0)
